@@ -8,12 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -89,7 +83,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa2d9352113dd4da6a46ef216feb15796"><td class="mdescLeft">&#160;</td><td class="mdescRight">The energy optimal timing is determined by solving Linear Programming problem and the solution is returned. <br /></td></tr>
 <tr class="separator:aa2d9352113dd4da6a46ef216feb15796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03e4ded7195b4bef933e3bbafb2e56ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoboticLineSolverLP.html#a03e4ded7195b4bef933e3bbafb2e56ee">addCollisionResolution</a> (<a class="el" href="classActivity.html">Activity</a> *i, <a class="el" href="classActivity.html">Activity</a> *j, const int32_t &amp;multipleOfCycleTime)</td></tr>
-<tr class="memdesc:a03e4ded7195b4bef933e3bbafb2e56ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">It adds a constraint \(s_j \geq s_i+d_i+CT*\mathrm{multipleOfCycleTime}\) to resolve a collision where \(s_i\) and \(d_i\) are start time and duration of the activity \(i\), respectively, and \(\mathrm{CT}\) is the robot cycle time.  <a href="#a03e4ded7195b4bef933e3bbafb2e56ee">More...</a><br /></td></tr>
+<tr class="memdesc:a03e4ded7195b4bef933e3bbafb2e56ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">It adds a constraint <img class="formulaInl" alt="$s_j \geq s_i+d_i+CT*\mathrm{multipleOfCycleTime}$" src="form_4.png"/> to resolve a collision where <img class="formulaInl" alt="$s_i$" src="form_5.png"/> and <img class="formulaInl" alt="$d_i$" src="form_6.png"/> are start time and duration of the activity <img class="formulaInl" alt="$i$" src="form_7.png"/>, respectively, and <img class="formulaInl" alt="$\mathrm{CT}$" src="form_8.png"/> is the robot cycle time.  <a href="#a03e4ded7195b4bef933e3bbafb2e56ee">More...</a><br /></td></tr>
 <tr class="separator:a03e4ded7195b4bef933e3bbafb2e56ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -249,7 +243,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>It adds a constraint \(s_j \geq s_i+d_i+CT*\mathrm{multipleOfCycleTime}\) to resolve a collision where \(s_i\) and \(d_i\) are start time and duration of the activity \(i\), respectively, and \(\mathrm{CT}\) is the robot cycle time. </p>
+<p>It adds a constraint <img class="formulaInl" alt="$s_j \geq s_i+d_i+CT*\mathrm{multipleOfCycleTime}$" src="form_4.png"/> to resolve a collision where <img class="formulaInl" alt="$s_i$" src="form_5.png"/> and <img class="formulaInl" alt="$d_i$" src="form_6.png"/> are start time and duration of the activity <img class="formulaInl" alt="$i$" src="form_7.png"/>, respectively, and <img class="formulaInl" alt="$\mathrm{CT}$" src="form_8.png"/> is the robot cycle time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i,j</td><td>First and second considered activity, respectively. </td></tr>
@@ -361,7 +355,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 7 2015 15:20:40 for solver by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 7 2015 16:53:29 for solver by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

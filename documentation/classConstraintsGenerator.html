@@ -8,12 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -178,7 +172,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a43595a9e7b262ab602b787903b31ce75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each has-to-be movement imposes a fixed precedence that is added to the formulation in the form of a constraint.  <a href="#a43595a9e7b262ab602b787903b31ce75">More...</a><br /></td></tr>
 <tr class="separator:a43595a9e7b262ab602b787903b31ce75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2eb160b78525fa44446942f46d25548a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classConstraintsGenerator.html#a2eb160b78525fa44446942f46d25548a">addCollisionResolution</a> (const <a class="el" href="VariableMappingLP_8h.html#a47ec7ce0039e7064965015c259ffc4ef">map1to1</a> &amp;s, const <a class="el" href="VariableMappingLP_8h.html#a47ec7ce0039e7064965015c259ffc4ef">map1to1</a> &amp;d, uint32_t i, uint32_t j, int32_t multipleOfCycleTime)</td></tr>
-<tr class="memdesc:a2eb160b78525fa44446942f46d25548a"><td class="mdescLeft">&#160;</td><td class="mdescRight">It adds a constraint \(s_{a_2} \geq s_{a_1}+d_{a_1}+CT*\mathrm{multipleOfCycleTime}\) to resolve a collision, i.e. it adds a precedence for a given multiple of the robot cycle time.  <a href="#a2eb160b78525fa44446942f46d25548a">More...</a><br /></td></tr>
+<tr class="memdesc:a2eb160b78525fa44446942f46d25548a"><td class="mdescLeft">&#160;</td><td class="mdescRight">It adds a constraint <img class="formulaInl" alt="$s_{a_2} \geq s_{a_1}+d_{a_1}+CT*\mathrm{multipleOfCycleTime}$" src="form_3.png"/> to resolve a collision, i.e. it adds a precedence for a given multiple of the robot cycle time.  <a href="#a2eb160b78525fa44446942f46d25548a">More...</a><br /></td></tr>
 <tr class="separator:a2eb160b78525fa44446942f46d25548a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -286,7 +280,7 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
       </table>
 </div><div class="memdoc">
 
-<p>It adds a constraint \(s_{a_2} \geq s_{a_1}+d_{a_1}+CT*\mathrm{multipleOfCycleTime}\) to resolve a collision, i.e. it adds a precedence for a given multiple of the robot cycle time. </p>
+<p>It adds a constraint <img class="formulaInl" alt="$s_{a_2} \geq s_{a_1}+d_{a_1}+CT*\mathrm{multipleOfCycleTime}$" src="form_3.png"/> to resolve a collision, i.e. it adds a precedence for a given multiple of the robot cycle time. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>Mapping of variables corresponding to the start times of activities. </td></tr>
@@ -1040,7 +1034,7 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 7 2015 15:20:40 for solver by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 7 2015 16:53:29 for solver by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

@@ -8,12 +8,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
-});
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -115,7 +109,7 @@ std::vector&lt; const std::tuple&lt; std::vector&lt; double &gt;, std::vector&lt
 <tr class="separator:a7d03f88f3f1c005db970bb925a2a3192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae694c63d78a0e21b51d26fddedb215a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae694c63d78a0e21b51d26fddedb215a9"></a>
 std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structILPModel.html#ae694c63d78a0e21b51d26fddedb215a9">b</a></td></tr>
-<tr class="memdesc:ae694c63d78a0e21b51d26fddedb215a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants in the constraints, i.e. the right-hand side vector of \(Ax \; \mathrm{op} \; b\). <br /></td></tr>
+<tr class="memdesc:ae694c63d78a0e21b51d26fddedb215a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constants in the constraints, i.e. the right-hand side vector of <img class="formulaInl" alt="$Ax \; \mathrm{op} \; b$" src="form_2.png"/>. <br /></td></tr>
 <tr class="separator:ae694c63d78a0e21b51d26fddedb215a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3a832a4e6104dfb1b1443c9e8403f01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3a832a4e6104dfb1b1443c9e8403f01"></a>
 std::vector&lt; <a class="el" href="ILPModel_8h.html#a7215803e478cdd4bdf4f1b8087cae87b">Operator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structILPModel.html#af3a832a4e6104dfb1b1443c9e8403f01">ops</a></td></tr>
@@ -137,9 +131,11 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Integer Linear Programming problem is stored in this data structure. </p>
 <p>Data structure corresponding to the Integer Linear Programming problem in the form:<br />
- \( \begin{alignat}{1} &amp; \text{min}/\text{max} \; c&#39;x \notag \\ &amp; \qquad Ax \; \mathrm{op} \; b \notag \\ &amp; \qquad x_1 \in \mathcal{R},\; x_2 \in \mathbb{B},\; x_3 \in \mathbb{Z} \notag \\ &amp; \qquad x = x_1 \cup x_2 \cup x_3 \notag \end{alignat} \) </p>
-
-<p>Definition at line <a class="el" href="ILPModel_8h_source.html#l00071">71</a> of file <a class="el" href="ILPModel_8h_source.html">ILPModel.h</a>.</p>
+ </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\begin{alignat}{1} &amp; \text{min}/\text{max} \; c'x \notag \\ &amp; \qquad Ax \; \mathrm{op} \; b \notag \\ &amp; \qquad x_1 \in \mathcal{R},\; x_2 \in \mathbb{B},\; x_3 \in \mathbb{Z} \notag \\ &amp; \qquad x = x_1 \cup x_2 \cup x_3 \notag \end{alignat}" src="form_1.png"/>
+</p>
+ 
+<p>Definition at line <a class="el" href="ILPModel_8h_source.html#l00069">69</a> of file <a class="el" href="ILPModel_8h_source.html">ILPModel.h</a>.</p>
 </div><hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/bukatlib/Downloads/Solver/inc/ILPModel/<a class="el" href="ILPModel_8h_source.html">ILPModel.h</a></li>
 <li>/home/bukatlib/Downloads/Solver/src/ILPModel/<a class="el" href="ILPModel_8cpp_source.html">ILPModel.cpp</a></li>
@@ -147,7 +143,7 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 7 2015 15:20:40 for solver by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 7 2015 16:53:29 for solver by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
