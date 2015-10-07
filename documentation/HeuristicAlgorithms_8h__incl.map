@@ -1,0 +1,19 @@
+<map id="/home/bukatlib/Downloads/Solver/inc/HeuristicSolver/HeuristicAlgorithms.h" name="/home/bukatlib/Downloads/Solver/inc/HeuristicSolver/HeuristicAlgorithms.h">
+<area shape="rect" id="node2" href="$PrecalculatedMapping_8h.html" title="The structures and methods suitable for fast searching in the data structure of the robotic cell..." alt="" coords="2199,275,2421,301"/>
+<area shape="rect" id="node29" href="$DataStructures_8h.html" title="Various data structures used by the heuristic. " alt="" coords="1707,440,1929,467"/>
+<area shape="rect" id="node30" href="$KnowledgeBase_8h.html" title="Declares the class storing the best found solutions, tuples, and information about the heuristic perf..." alt="" coords="2547,185,2737,226"/>
+<area shape="rect" id="node35" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="1052,109,1281,136"/>
+<area shape="rect" id="node8" href="$RoboticLine_8h.html" title="The file contains various classes devoted to abstract representation of the robotic cell..." alt="" coords="1565,515,1672,541"/>
+<area shape="rect" id="node19" href="$Utils_8h.html" title="Various auxiliary functions used across the program. " alt="" coords="1841,515,1951,541"/>
+<area shape="rect" id="node22" href="$Solution_8h.html" title="A representation of the solution that is algorithm independent. " alt="" coords="2542,357,2679,384"/>
+<area shape="rect" id="node16" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="1656,589,1808,616"/>
+<area shape="rect" id="node23" href="$SolverInterface_8h.html" title="Solver&#45;independent interface for solving Integer Linear Programming problems. " alt="" coords="1025,440,1217,467"/>
+<area shape="rect" id="node24" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="437,515,595,541"/>
+<area shape="rect" id="node26" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="5,589,203,616"/>
+<area shape="rect" id="node25" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="1933,589,2049,616"/>
+<area shape="rect" id="node36" href="$Settings_8h.html" title="It declares the namespace for program settings. " alt="" coords="227,589,311,616"/>
+<area shape="rect" id="node38" href="$VariableMappingLP_8h.html" title="Mapping of continuous variables of the energy optimization problem. " alt="" coords="525,440,747,467"/>
+<area shape="rect" id="node39" href="$ConstraintsGenerator_8h.html" title="Declares a class for the generation of constraints. " alt="" coords="997,192,1231,219"/>
+<area shape="rect" id="node37" href="$DefaultSettings_8h.html" title="Default configuration of the solver. " alt="" coords="205,664,333,691"/>
+<area shape="rect" id="node40" href="$VariableMappingILP_8h.html" title="Mapping of integer, to be more precise binary, variables of the energy optimization problem..." alt="" coords="822,350,1015,391"/>
+</map>

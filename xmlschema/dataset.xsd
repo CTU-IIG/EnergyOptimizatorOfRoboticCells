@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0" >
+
+	<xs:attribute name="aid" type="xs:nonNegativeInteger" />
+	<xs:attribute name="lid" type="xs:nonNegativeInteger" />
+	<xs:attribute name="mid" type="xs:nonNegativeInteger" />
+	<xs:attribute name="pid" type="xs:nonNegativeInteger" />
+	<xs:attribute name="oid" type="xs:nonNegativeInteger" />
+
+	<xs:simpleType name="nonNegativeDecimal">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="0" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="static-activity">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" minOccurs="0" />
+				<xs:element name="desc" type="xs:string" minOccurs="0" />
+				<xs:element name="min-duration" type="nonNegativeDecimal" />
+				<xs:element name="max-duration" type="nonNegativeDecimal" />
+				<xs:element name="locations">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="location" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="point" type="xs:nonNegativeInteger" />
+										<xs:element name="location-dependent-power-consumption" minOccurs="0" >
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="consumption" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute ref="pid" use="required" />
+															<xs:attribute name="input_power" type="nonNegativeDecimal" use="required" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+											<xs:unique name="unique-robot-mode-ref">
+												<xs:selector xpath="consumption" />
+												<xs:field xpath="@pid" />
+											</xs:unique>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute ref="lid" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute ref="aid" use="required" />
+			<xs:attribute name="last_in_cycle" use="optional" type="xs:boolean" />
+		</xs:complexType>
+		<xs:unique name="unique-location-ids">
+			<xs:selector xpath="locations/location" />
+			<xs:field xpath="@lid" />
+		</xs:unique>
+	</xs:element>
+
+	<xs:element name="dynamic-activity">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" minOccurs="0" />
+				<xs:element name="desc" type="xs:string" minOccurs="0" />
+				<xs:element name="movements">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="movement" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="from-point" type="xs:nonNegativeInteger" />
+										<xs:element name="to-point" type="xs:nonNegativeInteger" />
+										<xs:element name="min-duration" type="nonNegativeDecimal" />
+										<xs:element name="max-duration" type="nonNegativeDecimal" />
+										<xs:element name="energy-function">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="monomial" maxOccurs="unbounded">
+														<xs:complexType>
+															<xs:attribute name="degree" type="xs:integer" use="required" />
+															<xs:attribute name="coeff" type="xs:decimal" use="required" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+											<xs:unique name="unique-segments">
+												<xs:selector xpath="monomial" />
+												<xs:field xpath="@degree" />
+											</xs:unique>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute ref="mid" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="from_aid" type="xs:nonNegativeInteger" use="optional" />
+						<xs:attribute name="to_aid" type="xs:nonNegativeInteger" use="optional" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute ref="aid" use="required" />
+		</xs:complexType>
+		<xs:unique name="unique-movements-ids">
+			<xs:selector xpath="movements/movement" />
+			<xs:field xpath="@mid" />
+		</xs:unique>
+	</xs:element>
+
+	<xs:element name="robots" >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="robot" maxOccurs="unbounded" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string" minOccurs="0" />
+							<xs:element name="desc" type="xs:string" minOccurs="0" />
+							<xs:element name="activities" >
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="static-activity" maxOccurs="unbounded" />
+										<xs:element ref="dynamic-activity" maxOccurs="unbounded" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="power-saving-modes" >
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="power-mode" maxOccurs="unbounded" >
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="name" type="xs:string" minOccurs="0" />
+													<xs:element name="desc" type="xs:string" minOccurs="0" />
+													<xs:element name="minimal-idle-time" type="nonNegativeDecimal" />
+													<xs:element name="expected-input-power" type="nonNegativeDecimal" minOccurs="0" />
+												</xs:sequence>
+												<xs:attribute ref="pid" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+								<xs:unique name="unique-power-saving-modes-ids">
+									<xs:selector xpath="power-mode" />
+									<xs:field xpath="@pid" />
+								</xs:unique>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="unique-activity-ids">
+			<xs:selector xpath="robot/activities/*" />
+			<xs:field xpath="@aid" />
+		</xs:unique>
+		<xs:unique name="unique-points">
+			<xs:selector xpath="robot/activities/static-activity/locations/location" />
+			<xs:field xpath="point" />
+		</xs:unique>
+		<xs:unique name="unique-movements">
+			<xs:selector xpath="robot/activities/dynamic-activity/movements/movement" />
+			<xs:field xpath="from-point" />
+			<xs:field xpath="to-point" />
+		</xs:unique>
+	</xs:element>
+
+	<xs:element name="time-compatibility" >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="time-lag" maxOccurs="unbounded" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="from-activity" type="xs:nonNegativeInteger" />
+							<xs:element name="to-activity" type="xs:nonNegativeInteger" />
+							<xs:element name="length" type="xs:decimal" />
+							<xs:element name="height" type="xs:integer" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="spatial-compatibility" >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="compatible-pair" maxOccurs="unbounded" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="location" minOccurs="2" maxOccurs="2">
+								<xs:complexType>
+									<xs:attribute ref="aid" use="required" />
+									<xs:attribute ref="lid" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="instance" >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" minOccurs="0" />
+				<xs:element name="desc" type="xs:string" minOccurs="0" />
+				<xs:element ref="robots" />
+				<xs:element name="inter-robot-operations" minOccurs="0" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="operation" maxOccurs="unbounded" >
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string" minOccurs="0" />
+										<xs:element name="desc" type="xs:string" minOccurs="0" />
+										<xs:element ref="time-compatibility" minOccurs="0" />
+										<xs:element ref="spatial-compatibility" minOccurs="0" />
+									</xs:sequence>
+									<xs:attribute ref="oid" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+					<xs:unique name="unique-inter-robot-operations-ids">
+						<xs:selector xpath="operation" />
+						<xs:field xpath="@oid" />
+					</xs:unique>
+					<xs:unique name="unique-edges">
+						<xs:selector xpath="operation/time-compatibility/time-lag" />
+						<xs:field xpath="from-activity" />
+						<xs:field xpath="to-activity" />
+					</xs:unique>
+				</xs:element>
+				<xs:element name="collision-zones" minOccurs="0" >
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="collision-pair" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:choice minOccurs="2" maxOccurs="2" >
+										<xs:element name="location" >
+											<xs:complexType>
+												<xs:attribute ref="aid" use="required" />
+												<xs:attribute ref="lid" use="required" />
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="movement" >
+											<xs:complexType>
+												<xs:attribute ref="aid" use="required" />
+												<xs:attribute ref="mid" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="production-cycle-time" type="nonNegativeDecimal" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="dataset">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" minOccurs="0" />
+				<xs:element name="desc" type="xs:string" minOccurs="0" />
+				<xs:element ref="instance" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

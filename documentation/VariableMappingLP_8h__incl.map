@@ -1,0 +1,7 @@
+<map id="/home/bukatlib/Downloads/Solver/inc/ILPSolver/VariableMappingLP.h" name="/home/bukatlib/Downloads/Solver/inc/ILPSolver/VariableMappingLP.h">
+<area shape="rect" id="node5" href="$RoboticLine_8h.html" title="The file contains various classes devoted to abstract representation of the robotic cell..." alt="" coords="477,109,584,136"/>
+<area shape="rect" id="node17" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="1064,109,1221,136"/>
+<area shape="rect" id="node14" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="801,184,953,211"/>
+<area shape="rect" id="node18" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="281,184,397,211"/>
+<area shape="rect" id="node19" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="1295,184,1493,211"/>
+</map>

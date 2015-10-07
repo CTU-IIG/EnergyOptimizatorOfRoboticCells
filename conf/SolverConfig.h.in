@@ -1,0 +1,15 @@
+#define PROJECT_NAME "@PROJECT_NAME@"
+#define PROGRAM_VERSION "@PROJECT_VERSION@"
+#define INSTALL_PATH "@CMAKE_INSTALL_PREFIX@"
+#define BUILD_TYPE "@CMAKE_BUILD_TYPE@"
+
+#cmakedefine VALIDATE_INPUT_FILE_AGAINST_SCHEMA
+
+#define LOC std::string(@FILE_MACRO@)
+#define FUNC std::string(@FUNC_MACRO@)
+#define LINE @LINE_MACRO@
+#define caller() "file: "+LOC+"\nmethod: "+FUNC+" (line "+std::to_string(LINE)+")"
+
+#cmakedefine CPLEX_SOLVER
+#cmakedefine GUROBI_SOLVER
+#cmakedefine LPSOLVE_SOLVER

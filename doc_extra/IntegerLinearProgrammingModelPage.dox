@@ -1,0 +1,118 @@
+/*!
+ * \page math_form mathematical formulation
+ * \brief Energy optimization problem of robotic cells formulated as an Integer Linear Programming problem.<br>
+ * \details
+ * ### General description 
+ *
+ * Although the energy optimization problem of robotic cells is inherently non-linear, it is possible
+ * to formulate it as an Integer Linear Programming problem if the non-linear convex functions are piece-wise linearized.
+ * These functions correspond to energy functions of robot movements which express the dependency of the energy consumption 
+ * on the duration of the movement for a fixed trajectory. A solution for one robot can be perceived as the most
+ * energy efficient closed path through the specified stop coordinates, called locations. 
+ * During the waiting in a stationary robot position a power saving mode of a robot can be applied.
+ * If the whole robotic cell is optimized, time synchronizations and the spatial compatibility have to be met,
+ * i.e. a workpiece is handed over from one robot to another at the right place at the right time.
+ * Finally, as robots are close to each other, the collisions have to be avoided.
+ *
+ * ### Table of used symbols
+ *
+ * | symbol | description | reference | type |
+ * | :----: | :---------- | :-------: | :--: |
+ * | \f$A\f$ | set of all activities, i.e. \f$V \cup E\f$ | \ref Activity | set |
+ * | \f$V\f$ | set of all static activities | \ref StaticActivity | set |
+ * | \f$L_v\f$ | set of possible coordinates, i.e. locations, for activity \f$v \in V\f$ | \ref Location | set |
+ * | \f$E\f$ | set of all dynamic activities | \ref DynamicActivity | set |
+ * | \f$E_\mathcal{O}\f$ | set of all optional dynamic activities | \ref DynamicActivity | set |
+ * | \f$T_e\f$ | set of movements of activity \f$e \in E\f$ | \ref Movement | set |
+ * | \f$\mathcal{R}\f$ | set of robots | \ref Robot | set |
+ * | \f$M_r\f$ | power saving modes of robot \f$r \in \mathcal{R}\f$ | \ref RobotPowerMode | set |
+ * | \f$V_r\f$ | static activities of robot \f$r \in \mathcal{R}\f$ | -- | set |
+ * | \f$P_a\f$ | predecessors of activity \f$a \in A\f$ | \ref Activity::mPredecessors | set |
+ * | \f$S_a\f$ | successors of activity \f$a \in A\f$ | \ref Activity::mSuccessors | set |
+ * | \f$B\f$ | indices of the piece-wise linear functions | -- | set |
+ * | \f$k_{e,b}^t, q_{e,b}^t\f$ | coefficients of b-th linear function | -- | constants |
+ * | \f$E_{\mathcal{T\hspace{-1.0mm}L}}\f$ | time lags for inter-robot time synchronization  | \ref TimeLag | set |
+ * | \f$l_{a_1, a_2}\f$ | length of a time lag \f$(a_1, a_2) \in E_{\mathcal{T\hspace{-1.0mm}L}}\f$ | \ref TimeLag::mLength | constant |
+ * | \f$h_{a_1, a_2}\f$ | height of a time lag \f$(a_1, a_2) \in E_{\mathcal{T\hspace{-1.0mm}L}}\f$ | \ref TimeLag::mHeight | constant |
+ * | \f$Q_{l_i}\f$ | set of locations compatible with location \f$l_i\f$ | -- | set |
+ * | \f$n\f$ | multiple of the robot cycle time | -- | constant |
+ * | \f$g\f$ | either movement \f$e \in T_e\f$ or location \f$l \in L_v\f$ | \ref ActivityMode | mode |
+ * | \f$C\f$ | set of possible collisions | \ref RoboticLine::mCollisions | set |
+ * | \f$\overline{W}\f$ | upper bound on energy consumption | -- | constant |
+ * | \f$v_r^h\f$ | static activity that closes the cycle of robot \f$r \in \mathcal{R}\f$| Activity::mLastInCycle | activity |
+ * | \f$p_{v,l}^m\f$ | input power of robot \f$r \in \mathcal{R}\f$ for activity \f$v \in V_r\f$ and location \f$l \in L_v\f$ | \ref LocationDependentPowerConsumption | constant |
+ * | \f$\underline{d}_e^t\f$ | minimal duration of the movement \f$t \in T_e\f$ | \ref Movement::mMinDuration | constant |
+ * | \f$\overline{d}_e^t\f$ | maximal duration of the movement \f$t \in T_e\f$ | \ref Movement::mMaxDuration | constant |
+ *
+ * ### Table of variables
+ *
+ * | variable | description | reference | type |
+ * | :------: | :---------- | :-------: | :--: |
+ * | \f$W_a\f$ | energy consumption of activity \f$a \in A\f$ | \ref VariableMappingLP::W | positive float |
+ * | \f$s_a\f$ | start time of activity \f$a \in A\f$ | \ref VariableMappingLP::s | positive float |
+ * | \f$d_a\f$ | duration of activity \f$a \in A\f$ | \ref VariableMappingLP::d | positive float |
+ * | \f$x_v^l\f$ | true if location \f$l \in L_v\f$ of activity \f$v \in V\f$ is selected, otherwise false | \ref VariableMappingILP::x | binary |
+ * | \f$z_v^m\f$ | true if mode \f$m \in M_r\f$ is applied in activity \f$v \in V_r\f$, otherwise false | \ref VariableMappingILP::z | binary |
+ * | \f$y_e^t\f$ | true if movement \f$t \in T_e\f$ of activity \f$e \in E\f$ is selected, otherwise false | \ref VariableMappingILP::y | binary |
+ * | \f$w_{e,v}\f$ | true if activity \f$e \in E_\mathcal{O}\f$ is performed \f$\left(v \in S_e\right)\f$, otherwise false | \ref VariableMappingILP::w | binary |
+ * | \f$c_o^n\f$ | decides whether \f$a_1 \rightarrow a_2\f$ or \f$a_2 \rightarrow a_1\f$ to resolve a collision | \ref VariableMappingILP::c | binary |
+ *
+ * ### Integer Linear Programming model
+ * \f$
+ * \begin{alignat}{3}
+ *      & \text{minimise} \; \sum_{\forall a \in A} W_a & \qquad & (1) \\[2mm]
+ *      & \quad p_{v,l}^m d_v - \overline{W} \left(2-z_v^m-x_v^l\right) \leq W_v & \qquad & (2) \\
+ *      & \qquad\quad \forall r \in \mathcal{R}, \forall v \in V_r, \forall l \in L_v, \forall m \in M_r \\[1.0mm]
+ *      & \quad k_{e,b}^t d_e + q_{e,b}^t - \overline{W} \left(1-y_e^t\right) \leq W_e & \qquad & (3) \\
+ *      & \qquad\quad \forall e \in E, \forall t \in T_e, \forall b \in B \\[1.0mm]
+ *      & \quad \sum_{\forall l \in L_v} x_v^l = 1 \qquad \forall v \in V & \qquad & (4) \\[1.0mm]
+ *      & \quad \sum_{\forall m \in M_r} z_v^m = 1 \qquad \forall r \in \mathcal{R}, \forall v \in V_r & \qquad & (5) \\[1.0mm]
+ *      & \quad \sum_{\forall t \in T_e} y_e^t = 1 \qquad \forall e \in E \setminus E_{\mathcal{O}} & \qquad & (6) \\[1.0mm]
+ *      & \quad \sum_{\forall e \in P_v} \sum_{\forall t=(l_\textrm{from}, l) \in T_e} y_e^t = x_v^l \qquad \forall v \in V, \forall l \in L_v & \qquad & (7) \\[1.0mm]
+ *      & \quad \sum_{\forall e \in S_v} \sum_{\forall t=(l, l_{\textrm{to}}) \in T_e} y_e^t = x_v^l \qquad \forall v \in V, \forall l \in L_v & \qquad & (8) \\[1.0mm]
+ *      & \quad s_{a_2} = s_{a_1}+d_{a_1} & \qquad & (9) \\
+ *      & \quad\qquad \forall a_1 \in A \setminus E_{\mathcal{O}}, \forall a_2 \in S_{a_1}, \not \exists v_r^h = a_1 \\[1.0mm]
+ *      & \quad s_{e} = s_{v_r^h} + d_{v_r^h}-\mathrm{CT} & \qquad & (10) \\
+ *      & \quad\qquad \forall v_r^h \in V, \forall e \in S_{v_r^h} \\[1.0mm]
+ *      & \quad\sum_{\forall t \in T_e} y_e^t = w_{e,v} \qquad \forall e \in E_{\mathcal{O}}, \forall v \in S_e & \qquad & (11) \\[1.0mm]
+ *      & \quad s_v +  \left(1 - w_{e,v}\right) \mathrm{CT} \geq s_e+d_e & \qquad & (12) \\
+ *      & \quad\qquad \forall e \in E_{\mathcal{O}}, \forall v \in S_e \\[1.0mm]
+ *      & \quad s_v - \left(1 - w_{e,v}\right) \mathrm{CT} \leq s_e+d_e & \qquad & (13) \\
+ *      & \quad\qquad \forall e \in E_{\mathcal{O}}, \forall v \in S_e \\[1.0mm]
+ *      & \quad\max (\underline{d}_v, \underline{d}^m) z_v^m \leq d_v \leq \overline{d}_v & \qquad & (14) \\
+ *      & \quad\qquad \forall r \in \mathcal{R}, \forall v \in V_r, \forall m \in M_r \\[1.0mm]
+ *      & \quad\underline{d}_e^t y_e^t \leq d_e \leq \overline{d}_e^t + \mathrm{CT} \left(1-y_e^t\right) & \qquad & (15) \\
+ *      & \quad\qquad \forall e \in E, \forall t \in T_e \\[1.0mm]
+ *      & \quad s_{a_2}-s_{a_1} \geq l_{a_1, a_2} - \mathrm{CT} h_{a_1, a_2} \qquad \forall (a_1, a_2) \in E_{\mathcal{T\hspace{-1.0mm}L}} & \qquad & (16) \\[1.0mm]
+ *      & \quad x_{v_1}^{l_1} \leq \sum_{\forall l_2 \in L_{v_2}, l_2 \in \mathrm{Q}_{l_1}} x_{v_2}^{l_2} & \qquad & (17) \\
+ *      & \quad \qquad \forall v_1 \in V, \forall l_1 \in L_{v_1}, \left|Q_{l_1}\right| > 0 \\[1.0mm]
+ *      & \quad s_{a_2} + n \mathrm{CT} + 2\left|\mathcal{R}\right| \mathrm{CT} (3-c_{o}^{n}-u_{a_1}^{g_1}-u_{a_2}^{g_2}) \geq s_{a_1}+d_{a_1} & \qquad & (18) \\
+ *      & \quad\qquad \forall o=(a_1, g_1, a_2, g_2) \in C, \forall n \in \{-\left|\mathcal{R}\right|, \dots, \left|\mathcal{R}\right|\} \\[1.0mm]
+ *      & \quad s_{a_1} + 2 \left|\mathcal{R}\right| \mathrm{CT} (2+c_{o}^n-u_{a_1}^{g_1}-u_{a_2}^{g_2}) \geq s_{a_2}+d_{a_2}+ n\mathrm{CT} & \qquad & (19) \\
+ *      & \quad\qquad \forall o=(a_1, g_1, a_2, g_2) \in C, \forall n \in \{-\left|\mathcal{R}\right|, \dots, \left|\mathcal{R}\right|\} \\[2.5mm]
+ *      & W_a, s_a, d_a \in \mathbb{R}_{\ge 0} \qquad x_v^p, z_v^m, y_e^t, c_{o}^n, w_{e,v} \in \mathbb{B} & \qquad & (20)
+ * \end{alignat}
+ * \f$
+ *
+ * ### Description of constraints
+ *
+ * | constraint(s) | description | reference |
+ * | :-----------: | :---------- | :-------: |
+ * | (1) | Minimization of the total energy consumed by all the activities. | \ref RoboticLineSolverILP::construct |
+ * | (2) | Propagation of the energy consumption of static activities to the criterion with respect to the selected locations, power saving modes of robots, and durations. | \ref ConstraintsGenerator::addEnergyFunctions1 |
+ * | (3) | Propagation of the energy consumption of dynamic activities to the criterion with respect to the selected movements and robot speeds. | \ref ConstraintsGenerator::addEnergyFunctions2 |
+ * | (4), (5), (6) | Only one power saving mode and location is assigned to each static activity, and each mandatory dynamic activity has assigned just one movement. Constraints (6) can be omitted as flow preservation constraints (7), (8) and the timing enforce the implicit selection.  | \ref ConstraintsGenerator::addUniqueModeSelection |
+ * | (7), (8) | Flow preservation constraints ensure that if the robot enters to a location it also has to leave the same location. | \ref ConstraintsGenerator::addFlowConstraints |
+ * | (9), (10) | Ensure a correct timing for fixed precedences of activities | \ref ConstraintsGenerator::addFixedPrecedences |
+ * | (11), (12), (13) | Ensure a correct timing of optional precedences that model alternative orders of operations. | \ref ConstraintsGenerator::addPrecedenceSelectionConstraints, ConstraintsGenerator::addSelectablePrecedences |
+ * | (14), (15) | Restrictions on durations of static and dynamic activities, respectively. | \ref ConstraintsGenerator::addDurationConstraints |
+ * | (16) | Time synchronization between robots is ensured by time lags. | \ref ConstraintsGenerator::addTimeLags |
+ * | (17) | Constraints enforcing the spatial compatibility for handover operations. | \ref ConstraintsGenerator::addSpatialCompatibilityConstraints |
+ * | (18), (19) | Constraints ensure that two related activities are time disjunctive for different multiples of the production cycle time, and therefore, the collision is resolved. | \ref ConstraintsGenerator::addCollisions |
+ * | (20) | Domain of variables, all the variables of the model are either positive floats or binary variables. | \ref VariableMappingILP |
+ *
+ * \remark In the implementation, constraints (6) are omitted, and some of constraints are merged, therefore
+ * the number related to a constraint (in the constraint description) differs from the numbers presented here.
+ * This mathematical formulation was adapted to ease the understanding and reading.
+ */
+

@@ -1,0 +1,40 @@
+<map id="/home/bukatlib/Downloads/Solver/inc/Shared/Exceptions.h" name="/home/bukatlib/Downloads/Solver/inc/Shared/Exceptions.h">
+<area shape="rect" id="node2" href="$ILPModel_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPModel/ILPModel.cpp" alt="" coords="5,97,248,138"/>
+<area shape="rect" id="node3" href="$RoboticLineSolverILP_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/RoboticLine\lSolverILP.cpp" alt="" coords="1020,603,1252,659"/>
+<area shape="rect" id="node4" href="$VariableMappingLP_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/Variable\lMappingLP.cpp" alt="" coords="2863,291,3072,347"/>
+<area shape="rect" id="node5" href="$InstancesReader_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/InstancesReader\l/InstancesReader.cpp" alt="" coords="2874,499,3075,555"/>
+<area shape="rect" id="node6" href="$XmlReader_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/InstancesReader\l/XmlReader.cpp" alt="" coords="1035,499,1236,555"/>
+<area shape="rect" id="node7" href="$ProjectSolver_8cpp.html" title="Entry point of the program. Auxiliary functions for program help and argument processing. " alt="" coords="1275,818,1477,859"/>
+<area shape="rect" id="node8" href="$RoboticLine_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/RoboticLine.cpp" alt="" coords="3723,298,3916,339"/>
+<area shape="rect" id="node9" href="$Exceptions_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/Shared/Exceptions.cpp" alt="" coords="2457,97,2695,138"/>
+<area shape="rect" id="node10" href="$Solution_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/Solution/Solution.cpp" alt="" coords="1287,402,1509,443"/>
+<area shape="rect" id="node11" href="$DataStructures_8h.html" title="Various data structures used by the heuristic. " alt="" coords="3941,291,4128,347"/>
+<area shape="rect" id="node20" href="$SolverInterface_8h.html" title="Solver&#45;independent interface for solving Integer Linear Programming problems. " alt="" coords="943,97,1205,138"/>
+<area shape="rect" id="node34" href="$RoboticLine_8h.html" title="The file contains various classes devoted to abstract representation of the robotic cell..." alt="" coords="2247,97,2432,138"/>
+<area shape="rect" id="node39" href="$Utils_8h.html" title="Various auxiliary functions used across the program. " alt="" coords="3390,194,3575,235"/>
+<area shape="rect" id="node12" href="$HeuristicAlgorithms_8h.html" title="The optimization sub&#45;heuristics and Linear Programming solver for partially fixed problems..." alt="" coords="3111,603,3297,659"/>
+<area shape="rect" id="node14" href="$ParallelHeuristicSolver_8h.html" title="A parallel hybrid heuristic solving the energy optimization problem of robotic cells. " alt="" coords="3217,707,3404,763"/>
+<area shape="rect" id="node16" href="$KnowledgeBase_8h.html" title="Declares the class storing the best found solutions, tuples, and information about the heuristic perf..." alt="" coords="3309,395,3496,451"/>
+<area shape="rect" id="node13" href="$HeuristicAlgorithms_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/HeuristicAlgorithms.cpp" alt="" coords="2605,707,2792,763"/>
+<area shape="rect" id="node15" href="$ParallelHeuristicSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/ParallelHeuristicSolver.cpp" alt="" coords="3666,811,3859,867"/>
+<area shape="rect" id="node17" href="$KnowledgeBase_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/KnowledgeBase.cpp" alt="" coords="3456,499,3643,555"/>
+<area shape="rect" id="node18" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="2619,499,2849,555"/>
+<area shape="rect" id="node19" href="$RoboticLineSolverLP_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/RoboticLine\lSolverLP.cpp" alt="" coords="2772,603,3004,659"/>
+<area shape="rect" id="node21" href="$CplexSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/Cplex/CplexSolver.cpp" alt="" coords="1035,194,1268,235"/>
+<area shape="rect" id="node22" href="$GurobiSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/Gurobi/GurobiSolver.cpp" alt="" coords="424,194,669,235"/>
+<area shape="rect" id="node23" href="$LPSolveSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/LPSolve/LPSolveSolver.cpp" alt="" coords="693,194,960,235"/>
+<area shape="rect" id="node24" href="$Solution_8h.html" title="A representation of the solution that is algorithm independent. " alt="" coords="1497,194,1703,235"/>
+<area shape="rect" id="node25" href="$RoboticLineSolverILP_8h.html" title="RoboticLineSolverILP class, declared in this file, addresses the energy optimization problem of robot..." alt="" coords="1261,499,1491,555"/>
+<area shape="rect" id="node26" href="$PrecalculatedMapping_8h.html" title="The structures and methods suitable for fast searching in the data structure of the robotic cell..." alt="" coords="2127,291,2353,347"/>
+<area shape="rect" id="node32" href="$SolutionChecker_8h.html" title="The file declares a class responsible for checking of solutions. " alt="" coords="1757,402,2016,443"/>
+<area shape="rect" id="node27" href="$PrecalculatedMapping_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/Shared/Precalculated\lMapping.cpp" alt="" coords="2265,395,2492,451"/>
+<area shape="rect" id="node28" href="$ConstraintsGenerator_8h.html" title="Declares a class for the generation of constraints. " alt="" coords="2669,395,2899,451"/>
+<area shape="rect" id="node30" href="$InstancesReader_8h.html" title="Checking and post&#45;processing of parsed datasets. " alt="" coords="1533,395,1732,451"/>
+<area shape="rect" id="node31" href="$XmlReader_8h.html" title="The file declares XmlReader class which purpose is to parse and check XML datasets. " alt="" coords="2040,395,2239,451"/>
+<area shape="rect" id="node29" href="$ConstraintsGenerator_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/Constraints\lGenerator.cpp" alt="" coords="3099,499,3329,555"/>
+<area shape="rect" id="node33" href="$SolutionChecker_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/Solution/SolutionChecker.cpp" alt="" coords="1749,506,2024,547"/>
+<area shape="rect" id="node35" href="$Utils_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/Shared/Utils.cpp" alt="" coords="3097,298,3292,339"/>
+<area shape="rect" id="node36" href="$VariableMappingLP_8h.html" title="Mapping of continuous variables of the energy optimization problem. " alt="" coords="2479,187,2687,243"/>
+<area shape="rect" id="node37" href="$VariableMappingILP_8h.html" title="Mapping of integer, to be more precise binary, variables of the energy optimization problem..." alt="" coords="2428,291,2636,347"/>
+<area shape="rect" id="node38" href="$VariableMappingILP_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/Variable\lMappingILP.cpp" alt="" coords="2974,395,3183,451"/>
+</map>

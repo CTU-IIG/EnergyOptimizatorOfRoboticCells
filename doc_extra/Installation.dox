@@ -1,0 +1,78 @@
+/*!
+ * \page installation installation instructions
+ * \brief Program requirements, configuration, building, and installing.<br>
+ *
+ * ### Installation prerequisites
+ * 
+ * - <b>Linux</b> operation system (or Unix like systems)
+ * 	+ other operating systems like Windows or MacOS are not currently supported
+ * 	+ however, it should be not difficult to make a port for these operating systems
+ * - <b>Libxml2</b> and <b>Libxmlpp</b> libraries
+ *	+ used for checking and parsing input datasets
+ *	+ it is recommended to use the latest versions
+ * - <b>Integer Linear Programming solver</b>
+ * 	+ currently Gurobi, Cplex, and lp_solve are supported
+ * 	+ lp_solve is an open-source solver
+ * 	+ Gurobi is the best performing solver for the heuristic
+ * 	+ at least one solver has to be correctly installed
+ * - <b>CMake</b> build system
+ * 	+ version 3.0 or newer is required
+ * - <b>C++11</b> compiler
+ *	+ GCC of version 4.8 or newer
+ *	+ Clang of version 3.5 or newer
+ *	+ other good C++11 compilers should also work
+ * - <b>Doxygen</b> documentation tool (optional)
+ *	+ generates the html documentation of this project
+ *	+ recommended version is 1.8.9.1 or newer
+ *	+ Doxygen has to support LaTeX and dot graphs (Graphviz)
+ *
+ * ### Program installation 
+ *
+ * 1. download the source codes from <https://github.com/CTU-IIG>
+ * 2. enter the root directory of the program
+ * 3. create and enter a separate building directory
+ * 	- \code mkdir build/; cd build/ \endcode
+ * 4. configure the program
+ *	- \code cmake [options] ../ \endcode
+ *	- some CMake options are documented \ref cmakeopts "here"
+ *	- current configuration can also be interactively changed by '<tt>ccmake ../</tt>' command
+ *	- notice the generated <tt>SolverConfig.h</tt> file
+ * 5. build the program
+ *	- \code make -jN \endcode
+ *	- <tt>N</tt> is the number of concurrent jobs (~number of CPU cores)
+ * 6. generate html documentation (optional)
+ *	- \code make doc \endcode
+ *	- configuration of Doxygen is located in <tt>doxyfilehtml.in</tt> file
+ * 7. install program (and documentation)
+ *	- \code make install \endcode
+ *
+ * ### Execution of the program
+ *
+ * Enter a directory with the program executable, which depends on the install path ("solver/bin/" by default), and execute the following command to print the program help.
+ *
+ * \code
+ * ./EnergyOptimizatorOfRoboticCells --help
+ * \endcode
+ *
+ * The program header displays the compile-time information like build type, used solver, and program version.
+ * The following part prints valid short/long program parameters, for more information see \ref prog_help.
+ * To test this program it is possible to use either your dataset file, or download available datasets (and optionally generator)
+ * from our [GitHub page](https://github.com/CTU-IIG).
+ *
+ * ### Selected CMake options by examples
+ *
+ * \anchor cmakeopts
+ * | option | description |
+ * | :----: | :---------- |
+ * | <pre>-DCMAKE_BUILD_TYPE=Debug</pre> | Ensures that the program is compiled in a debug mode. Lots of asserts and debug methods are called during the runtime to detect a potential source of problems. If it is not enough, it is possible to use advanced debugging and error checking tools, e.g. GDB or Valgrind, to shed more light on the problems. |
+ * | <pre>-DCMAKE_BUILD_TYPE=Release</pre> | The program is fully optimized in a release mode. It is a default build type. |
+ * | <pre>-DILP_SOLVER=solver_name</pre> | Selects the Integer Linear Programming solver that will be used to solve (I)LP problems. Valid strings are LPSolve, Gurobi, or Cplex. |
+ * | <pre>-DCMAKE_INSTALL_PREFIX=/usr/local</pre> |  Specifies the installation path, by default it is the root directory of the program. |
+ * | <pre>-DCMAKE_C_COMPILER=clang</pre> | Sets Clang as a C compiler. Clang may be replaced by alternative compilers. |
+ * | <pre>-DCMAKE_CXX_COMPILER=clang++</pre> | Sets Clang as a C++11 compiler. Clang may be replaced by alternative compilers. |
+ * | <pre>-DCMAKE_CXX_FLAGS="-O2 -march=native"</pre> | Additional optimization flags for C++11 compiler. |
+ * | <pre>-DLIBRARY_LINKAGE=linkage_type</pre> | Library linkage is either <tt>STATIC</tt> or <tt>DYNAMIC</tt>. The static linkage builds a monolithic binary containing all the program code and its libraries. Dynamic linkage decomposes the program to shared libraries (~modules) that are linked to the resulting executable file.  |
+ */
+
+//  ### <a name="cmakeopts">Selected CMake options by examples</a>
+//	- some CMake options are documented <a href="#cmakeopts">here</a>

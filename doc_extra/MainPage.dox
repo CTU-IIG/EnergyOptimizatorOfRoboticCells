@@ -1,0 +1,22 @@
+/*!
+ * \mainpage Energy Optimizator of Robotic Cells
+ * \image html robotic_cell.png
+ * \brief The purpose of the program is to provide an energy optimization tool for industrial robotic cells.
+ * \details The energy optimization of industrial robotic cells, which is essential
+ * for sustainable development in the long-term, is addressed by developing novel algorithms
+ * that consider many aspects such as robot speeds, path selection, order of operations,
+ * and power saving modes of robots from the global point of view.
+ * The implemented exact algorithm employs an Integer Linear Programming solver,
+ * thus optimality of a solution can be proved, and is suitable rather for smaller instances.
+ * The heuristic algorithm, however, can beat the exact algorithm on real-sized problems
+ * thanks to the utilization of a parallel hardware and an optional Gurobi simplex method for convex functions.
+ * All the algorithms, data structures, and other related files are described in this documentation.
+ *
+ * \authors [Libor Bukata](mailto:bukatlib@fel.cvut.cz) and [Premysl Sucha](mailto:suchap@fel.cvut.cz)
+ * \copyright This project is released under the GNU Public License.
+ * \see
+ * Libor Bukata, Premysl Sucha, Zdenek Hanzalek, and Pavel Burget.
+ * <em>Energy Optimization of Robotic Cells</em>.
+ * Journal to be filled soon.
+ */
+

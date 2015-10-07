@@ -1,0 +1,11 @@
+<map id="/home/bukatlib/Downloads/Solver/inc/Solution/SolutionChecker.h" name="/home/bukatlib/Downloads/Solver/inc/Solution/SolutionChecker.h">
+<area shape="rect" id="node6" href="$RoboticLine_8h.html" title="The file contains various classes devoted to abstract representation of the robotic cell..." alt="" coords="1183,320,1289,347"/>
+<area shape="rect" id="node18" href="$Utils_8h.html" title="Various auxiliary functions used across the program. " alt="" coords="1683,320,1793,347"/>
+<area shape="rect" id="node21" href="$Solution_8h.html" title="A representation of the solution that is algorithm independent. " alt="" coords="1419,171,1556,197"/>
+<area shape="rect" id="node28" href="$PrecalculatedMapping_8h.html" title="The structures and methods suitable for fast searching in the data structure of the robotic cell..." alt="" coords="1683,96,1905,123"/>
+<area shape="rect" id="node15" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="925,395,1077,421"/>
+<area shape="rect" id="node22" href="$SolverInterface_8h.html" title="Solver&#45;independent interface for solving Integer Linear Programming problems. " alt="" coords="799,245,992,272"/>
+<area shape="rect" id="node23" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="713,320,871,347"/>
+<area shape="rect" id="node25" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="5,395,203,421"/>
+<area shape="rect" id="node24" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="733,395,849,421"/>
+</map>

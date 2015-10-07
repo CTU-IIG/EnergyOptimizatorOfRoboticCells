@@ -1,0 +1,8 @@
+<map id="SolverException" name="SolverException">
+<area shape="rect" id="node3" href="$classEmptySolutionPool.html" title="Thrown if the best solution of the heuristic cannot be returned since the solution pool is empty..." alt="" coords="5,315,176,407"/>
+<area shape="rect" id="node4" href="$classILPSolverException.html" title="Exception dedicated to problems with Integer Linear Programming solvers. " alt="" coords="200,315,376,407"/>
+<area shape="rect" id="node5" href="$classInvalidArgument.html" title="Exception is thrown if a method is given invalid parameters or a user provides invalid program argume..." alt="" coords="400,315,553,407"/>
+<area shape="rect" id="node6" href="$classInvalidDatasetFile.html" title="Thrown if the dataset file contains ill&#45;specified robotic cells. " alt="" coords="579,315,743,407"/>
+<area shape="rect" id="node7" href="$classNoFeasibleSolutionExists.html" title="Thrown if no feasible solution is found by the heuristic. " alt="" coords="768,315,977,407"/>
+<area shape="rect" id="node2" title="STL class. " alt="" coords="423,5,531,83"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="/home/bukatlib/Downloads/Solver/inc/ILPSolver/ConstraintsGenerator.h" name="/home/bukatlib/Downloads/Solver/inc/ILPSolver/ConstraintsGenerator.h">
+<area shape="rect" id="node6" href="$RoboticLine_8h.html" title="The file contains various classes devoted to abstract representation of the robotic cell..." alt="" coords="621,349,728,376"/>
+<area shape="rect" id="node17" href="$PrecalculatedMapping_8h.html" title="The structures and methods suitable for fast searching in the data structure of the robotic cell..." alt="" coords="498,109,720,136"/>
+<area shape="rect" id="node24" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="1933,349,2091,376"/>
+<area shape="rect" id="node29" href="$VariableMappingILP_8h.html" title="Mapping of integer, to be more precise binary, variables of the energy optimization problem..." alt="" coords="1357,185,1549,226"/>
+<area shape="rect" id="node14" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="1005,424,1157,451"/>
+<area shape="rect" id="node19" href="$Utils_8h.html" title="Various auxiliary functions used across the program. " alt="" coords="1397,349,1507,376"/>
+<area shape="rect" id="node22" href="$Solution_8h.html" title="A representation of the solution that is algorithm independent. " alt="" coords="618,192,755,219"/>
+<area shape="rect" id="node23" href="$SolverInterface_8h.html" title="Solver&#45;independent interface for solving Integer Linear Programming problems. " alt="" coords="1774,275,1967,301"/>
+<area shape="rect" id="node26" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="1983,424,2181,451"/>
+<area shape="rect" id="node25" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="763,424,879,451"/>
+<area shape="rect" id="node30" href="$VariableMappingLP_8h.html" title="Mapping of continuous variables of the energy optimization problem. " alt="" coords="1472,275,1693,301"/>
+</map>

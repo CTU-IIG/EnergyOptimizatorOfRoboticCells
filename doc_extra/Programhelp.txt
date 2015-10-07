@@ -1,0 +1,49 @@
+Energy optimizator of robotic cells.
+Authors: Libor Bukata and Premysl Sucha
+Licence: GNU General Public License
+Program version: program version, e.g. '1.0'
+ILP solver: Gurobi, Cplex, or LPSolve + version
+Build type: Release or Debug
+
+Usage:
+        ./EnergyOptimizatorOfRoboticCells [options] --dataset FILE
+
+General options:
+        --dataset ARG, -d ARG, ARG: FILE
+                The input dataset to solve (an xml file).
+        --verbose, -v
+                An additional information is printed (solver progress, runtime, etc.).
+        --number-of-segments ARG, -nos ARG, ARG: INTEGER
+                The number of segments of each discretized energy function.
+        --number-of-threads ARG, -not ARG, ARG: INTEGER
+                The number of concurrent threads (default is autodetect).
+        --help, -h
+                It prints this help.
+        --max-runtime ARG, -mr ARG, ARG: FLOAT
+                It sets the time limit per instance for a selected algorithm (in seconds).
+        --use-heuristic-algorithm, -uha
+                A heuristic algorithm is employed to solve instances.
+        --use-exact-algorithm, -uea
+                An exact algorithm is preferred as a problem solver.
+        --write-results ARG, -wr ARG, ARG: DIRECTORY
+                It specifies where the solutions, error logs, and performance logs will be written.
+
+ILP solver options:
+        --ilp-solver-relative-gap ARG, -isrg ARG, ARG: DECIMAL
+                It stops the solver after achieving the relative gap between the best integer solution and lower bound.
+                Setting the gap to 0.05 means that solver stops after proving 5 % maximal gap from the optimal solution.
+        --lower-bound-calculation, -lbc
+                It turns on the calculation of a tighter lower bound by using a problem decomposition and an ILP solver.
+        --lower-bound-runtime ARG, -lbr ARG, ARG: FLOAT
+                It sets a time limit for the tight lower bound calculation.
+
+Heuristic options:
+        --number-of-elite-solutions ARG, -noes ARG, ARG: INTEGER
+                The maximal number of elite solutions in the pool.
+        --max-number-of-alternatives ARG, -mnoa ARG, ARG: INTEGER
+                The maximal number of alternatives to consider for each robot.
+        --minimal-number-of-iters-per-tuple ARG, -mnoipt ARG, ARG: INTEGER
+                The minimal number of runs of sub-heuristics for each feasible solution. Sub-heuristics, i.e.
+                (de)select power mode, change locations, and change path, are executed in the round robin order.
+
+Default settings can be modified at "DefaultSettings.h" file.

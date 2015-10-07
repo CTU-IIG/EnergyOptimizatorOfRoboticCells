@@ -1,0 +1,30 @@
+The purpose of this program is to optimize industrial robotic cells
+with respect to the energy consumption.
+
+The program EnergyOptimizatorOfRoboticCells is distributed
+under the terms of the GNU General Public License.
+
+Authors:
+1) Libor Bukata (bukatlib@fel.cvut.cz)
+2) Premysl Sucha (suchap@fel.cvut.cz)
+3) Zdenek Hanzalek (hanzalek@fel.cvut.cz)
+4) Pavel Burget (pavel.burget@fel.cvut.cz)
+
+Prerequisites and installation:
+a) online up-to-date instructions
+	http://htmlpreview.github.com/?https://github.com/CTU-IIG/EnergyOptimizatorOfRoboticCells/blob/master/documentation/installation.html
+b) local copy
+	open 'documentation/installation.html' file in a browser
+
+Documentation of the program and code:
+a) online up-to-date documentation
+	http://htmlpreview.github.com/?https://github.com/CTU-IIG/EnergyOptimizatorOfRoboticCells/blob/master/documentation/index.html
+b) local copy
+	open 'documentation/index.html' file in a browser
+
+Remark:
+If you find this software useful for your research or you create an algorithm
+based on this software, please cite our original paper in your publication list.
+
+Libor Bukata, Premysl Sucha, Zdenek Hanzalek, and Pavel Burget.
+Energy Optimization of Robotic Cells. Journal to be filled soon.
