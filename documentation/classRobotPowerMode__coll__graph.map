@@ -1,9 +1,0 @@
-<map id="RobotPowerMode" name="RobotPowerMode">
-<area shape="rect" id="node2" href="$classRobot.html" title="Instance of this class includes all the data structures and methods related to a robot. " alt="" coords="515,819,721,1087"/>
-<area shape="rect" id="node8" href="$classActivity.html" title="The base class incorporating common properties of robot operations and movements. ..." alt="" coords="734,1166,913,1610"/>
-<area shape="rect" id="node3" href="$classRoboticLine.html" title="The robotic cell corresponds to an instance of this class. " alt="" coords="151,1688,343,2059"/>
-<area shape="rect" id="node5" href="$classInterRobotOperation.html" title="The inter&#45;robot operation corresponding to the workpiece/weldment handling. " alt="" coords="609,2281,818,2519"/>
-<area shape="rect" id="node7" href="$classTimeLag.html" title="Instance of TimeLag class defines a time relation between two different robots. " alt="" coords="848,1769,947,1978"/>
-<area shape="rect" id="node10" title="STL class. " alt="" coords="675,149,757,227"/>
-<area shape="rect" id="node11" title="STL class. " alt="" coords="651,6,781,98"/>
-</map>

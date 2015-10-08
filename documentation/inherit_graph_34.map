@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title="STL class. " alt="" coords="6,107,114,133"/>
-<area shape="rect" id="node2" href="$classSolverException.html" title="A general exception of the program. " alt="" coords="163,107,287,133"/>
-<area shape="rect" id="node3" href="$classEmptySolutionPool.html" title="Thrown if the best solution of the heuristic cannot be returned since the solution pool is empty..." alt="" coords="356,5,495,32"/>
-<area shape="rect" id="node4" href="$classILPSolverException.html" title="Exception dedicated to problems with Integer Linear Programming solvers. " alt="" coords="353,56,498,83"/>
-<area shape="rect" id="node5" href="$classInvalidArgument.html" title="Exception is thrown if a method is given invalid parameters or a user provides invalid program argume..." alt="" coords="364,107,487,133"/>
-<area shape="rect" id="node6" href="$classInvalidDatasetFile.html" title="Thrown if the dataset file contains ill&#45;specified robotic cells. " alt="" coords="358,157,493,184"/>
-<area shape="rect" id="node7" href="$classNoFeasibleSolutionExists.html" title="Thrown if no feasible solution is found by the heuristic. " alt="" coords="336,208,515,235"/>
-</map>

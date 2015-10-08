@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classActivityMode.html" title="Either a movement or location. " alt="" coords="6,31,109,57"/>
-<area shape="rect" id="node2" href="$classLocation.html" title="Location of the robot used either during work (welding) or waiting. " alt="" coords="163,5,239,32"/>
-<area shape="rect" id="node3" href="$classMovement.html" title="The instance of the class corresponds to a robot movement between two coordinates. " alt="" coords="157,56,245,83"/>
-</map>

@@ -11,16 +11,10 @@ Authors:
 4) Pavel Burget (pavel.burget@fel.cvut.cz)
 
 Prerequisites and installation:
-a) online up-to-date instructions
-	http://htmlpreview.github.com/?https://github.com/CTU-IIG/EnergyOptimizatorOfRoboticCells/blob/master/documentation/installation.html
-b) local copy
-	open 'documentation/installation.html' file in a browser
+http://CTU-IIG.github.io/EnergyOptimizatorOfRoboticCells/installation.html
 
 Documentation of the program and code:
-a) online up-to-date documentation
-	http://htmlpreview.github.com/?https://github.com/CTU-IIG/EnergyOptimizatorOfRoboticCells/blob/master/documentation/index.html
-b) local copy
-	open 'documentation/index.html' file in a browser
+http://CTU-IIG.github.io/EnergyOptimizatorOfRoboticCells
 
 Remark:
 If you find this software useful for your research or you create an algorithm
