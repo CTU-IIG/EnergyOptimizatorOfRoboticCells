@@ -1,6 +1,6 @@
-<map id="/home/bukatlib/Downloads/Solver/inc/ILPModel/SolverInterface.h" name="/home/bukatlib/Downloads/Solver/inc/ILPModel/SolverInterface.h">
-<area shape="rect" id="node6" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="209,96,367,123"/>
-<area shape="rect" id="node13" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="754,171,952,197"/>
-<area shape="rect" id="node16" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="441,96,593,123"/>
-<area shape="rect" id="node7" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="232,171,348,197"/>
+<map id="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/ILPModel/SolverInterface.h" name="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/ILPModel/SolverInterface.h">
+<area shape="rect" id="node6" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="209,109,367,136"/>
+<area shape="rect" id="node13" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="754,184,952,211"/>
+<area shape="rect" id="node16" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="441,109,593,136"/>
+<area shape="rect" id="node7" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="232,184,348,211"/>
 </map>

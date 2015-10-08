@@ -1,7 +1,7 @@
-<map id="/home/bukatlib/Downloads/Solver/inc/Solution/Solution.h" name="/home/bukatlib/Downloads/Solver/inc/Solution/Solution.h">
-<area shape="rect" id="node5" href="$SolverInterface_8h.html" title="Solver&#45;independent interface for solving Integer Linear Programming problems. " alt="" coords="222,96,415,123"/>
-<area shape="rect" id="node9" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="320,171,477,197"/>
-<area shape="rect" id="node15" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="754,245,952,272"/>
-<area shape="rect" id="node18" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="501,171,653,197"/>
-<area shape="rect" id="node10" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="315,245,431,272"/>
+<map id="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/Solution/Solution.h" name="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/Solution/Solution.h">
+<area shape="rect" id="node5" href="$SolverInterface_8h.html" title="Solver&#45;independent interface for solving Integer Linear Programming problems. " alt="" coords="222,109,415,136"/>
+<area shape="rect" id="node9" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="320,184,477,211"/>
+<area shape="rect" id="node15" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="754,259,952,285"/>
+<area shape="rect" id="node18" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="501,184,653,211"/>
+<area shape="rect" id="node10" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="315,259,431,285"/>
 </map>

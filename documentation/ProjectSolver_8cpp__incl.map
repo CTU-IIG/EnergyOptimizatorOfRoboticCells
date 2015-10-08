@@ -1,25 +1,25 @@
-<map id="/home/bukatlib/Downloads/Solver/src/ProjectSolver.cpp" name="/home/bukatlib/Downloads/Solver/src/ProjectSolver.cpp">
-<area shape="rect" id="node6" href="$Settings_8h.html" title="It declares the namespace for program settings. " alt="" coords="2807,376,2891,403"/>
-<area shape="rect" id="node10" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="1915,699,2067,725"/>
-<area shape="rect" id="node15" href="$InstancesReader_8h.html" title="Checking and post&#45;processing of parsed datasets. " alt="" coords="3033,369,3228,410"/>
-<area shape="rect" id="node27" href="$Solution_8h.html" title="A representation of the solution that is algorithm independent. " alt="" coords="731,549,868,576"/>
-<area shape="rect" id="node28" href="$SolverInterface_8h.html" title="Solver&#45;independent interface for solving Integer Linear Programming problems. " alt="" coords="2349,624,2541,651"/>
-<area shape="rect" id="node34" href="$SolutionChecker_8h.html" title="The file declares a class responsible for checking of solutions. " alt="" coords="395,376,585,403"/>
-<area shape="rect" id="node36" href="$RoboticLineSolverILP_8h.html" title="RoboticLineSolverILP class, declared in this file, addresses the energy optimization problem of robot..." alt="" coords="2426,278,2627,319"/>
-<area shape="rect" id="node40" href="$ParallelHeuristicSolver_8h.html" title="A parallel hybrid heuristic solving the energy optimization problem of robotic cells. " alt="" coords="1369,97,1535,138"/>
-<area shape="rect" id="node8" href="$DefaultSettings_8h.html" title="Default configuration of the solver. " alt="" coords="2796,467,2924,493"/>
-<area shape="rect" id="node16" href="$RoboticLine_8h.html" title="The file contains various classes devoted to abstract representation of the robotic cell..." alt="" coords="1368,624,1475,651"/>
-<area shape="rect" id="node22" href="$PrecalculatedMapping_8h.html" title="The structures and methods suitable for fast searching in the data structure of the robotic cell..." alt="" coords="1453,467,1675,493"/>
-<area shape="rect" id="node24" href="$Utils_8h.html" title="Various auxiliary functions used across the program. " alt="" coords="1722,624,1832,651"/>
-<area shape="rect" id="node29" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="2635,699,2792,725"/>
-<area shape="rect" id="node31" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="2511,773,2709,800"/>
-<area shape="rect" id="node30" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="1315,773,1431,800"/>
-<area shape="rect" id="node37" href="$VariableMappingILP_8h.html" title="Mapping of integer, to be more precise binary, variables of the energy optimization problem..." alt="" coords="2375,459,2568,501"/>
-<area shape="rect" id="node39" href="$ConstraintsGenerator_8h.html" title="Declares a class for the generation of constraints. " alt="" coords="1705,376,1939,403"/>
-<area shape="rect" id="node38" href="$VariableMappingLP_8h.html" title="Mapping of continuous variables of the energy optimization problem. " alt="" coords="2500,549,2721,576"/>
-<area shape="rect" id="node42" href="$Algorithms_8h.html" title="Universal algorithms like Floyd&#45;Warshall, Golden Search, etc. " alt="" coords="787,773,935,800"/>
-<area shape="rect" id="node44" href="$KnowledgeBase_8h.html" title="Declares the class storing the best found solutions, tuples, and information about the heuristic perf..." alt="" coords="990,369,1180,410"/>
-<area shape="rect" id="node48" href="$DataStructures_8h.html" title="Various data structures used by the heuristic. " alt="" coords="1873,467,2096,493"/>
-<area shape="rect" id="node49" href="$HeuristicAlgorithms_8h.html" title="The optimization sub&#45;heuristics and Linear Programming solver for partially fixed problems..." alt="" coords="1365,187,1539,229"/>
-<area shape="rect" id="node50" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="1553,285,1783,312"/>
+<map id="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/src/ProjectSolver.cpp" name="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/src/ProjectSolver.cpp">
+<area shape="rect" id="node6" href="$Settings_8h.html" title="It declares the namespace for program settings. " alt="" coords="2807,389,2891,416"/>
+<area shape="rect" id="node10" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="1915,712,2067,739"/>
+<area shape="rect" id="node15" href="$InstancesReader_8h.html" title="Checking and post&#45;processing of parsed datasets. " alt="" coords="3033,382,3228,423"/>
+<area shape="rect" id="node27" href="$Solution_8h.html" title="A representation of the solution that is algorithm independent. " alt="" coords="731,563,868,589"/>
+<area shape="rect" id="node28" href="$SolverInterface_8h.html" title="Solver&#45;independent interface for solving Integer Linear Programming problems. " alt="" coords="2349,637,2541,664"/>
+<area shape="rect" id="node34" href="$SolutionChecker_8h.html" title="The file declares a class responsible for checking of solutions. " alt="" coords="395,389,585,416"/>
+<area shape="rect" id="node36" href="$RoboticLineSolverILP_8h.html" title="RoboticLineSolverILP class, declared in this file, addresses the energy optimization problem of robot..." alt="" coords="2426,291,2627,333"/>
+<area shape="rect" id="node40" href="$ParallelHeuristicSolver_8h.html" title="A parallel hybrid heuristic solving the energy optimization problem of robotic cells. " alt="" coords="1369,110,1535,151"/>
+<area shape="rect" id="node8" href="$DefaultSettings_8h.html" title="Default configuration of the solver. " alt="" coords="2796,480,2924,507"/>
+<area shape="rect" id="node16" href="$RoboticLine_8h.html" title="The file contains various classes devoted to abstract representation of the robotic cell..." alt="" coords="1368,637,1475,664"/>
+<area shape="rect" id="node22" href="$PrecalculatedMapping_8h.html" title="The structures and methods suitable for fast searching in the data structure of the robotic cell..." alt="" coords="1453,480,1675,507"/>
+<area shape="rect" id="node24" href="$Utils_8h.html" title="Various auxiliary functions used across the program. " alt="" coords="1722,637,1832,664"/>
+<area shape="rect" id="node29" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="2635,712,2792,739"/>
+<area shape="rect" id="node31" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="2511,787,2709,813"/>
+<area shape="rect" id="node30" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="1315,787,1431,813"/>
+<area shape="rect" id="node37" href="$VariableMappingILP_8h.html" title="Mapping of integer, to be more precise binary, variables of the energy optimization problem..." alt="" coords="2375,473,2568,514"/>
+<area shape="rect" id="node39" href="$ConstraintsGenerator_8h.html" title="Declares a class for the generation of constraints. " alt="" coords="1705,389,1939,416"/>
+<area shape="rect" id="node38" href="$VariableMappingLP_8h.html" title="Mapping of continuous variables of the energy optimization problem. " alt="" coords="2500,563,2721,589"/>
+<area shape="rect" id="node42" href="$Algorithms_8h.html" title="Universal algorithms like Floyd&#45;Warshall, Golden Search, etc. " alt="" coords="787,787,935,813"/>
+<area shape="rect" id="node44" href="$KnowledgeBase_8h.html" title="Declares the class storing the best found solutions, tuples, and information about the heuristic perf..." alt="" coords="990,382,1180,423"/>
+<area shape="rect" id="node48" href="$DataStructures_8h.html" title="Various data structures used by the heuristic. " alt="" coords="1873,480,2096,507"/>
+<area shape="rect" id="node49" href="$HeuristicAlgorithms_8h.html" title="The optimization sub&#45;heuristics and Linear Programming solver for partially fixed problems..." alt="" coords="1365,201,1539,242"/>
+<area shape="rect" id="node50" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="1553,299,1783,325"/>
 </map>

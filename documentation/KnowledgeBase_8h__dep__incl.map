@@ -1,10 +1,10 @@
-<map id="/home/bukatlib/Downloads/Solver/inc/HeuristicSolver/KnowledgeBase.h" name="/home/bukatlib/Downloads/Solver/inc/HeuristicSolver/KnowledgeBase.h">
-<area shape="rect" id="node2" href="$KnowledgeBase_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/KnowledgeBase.cpp" alt="" coords="9,109,196,165"/>
-<area shape="rect" id="node3" href="$HeuristicAlgorithms_8h.html" title="The optimization sub&#45;heuristics and Linear Programming solver for partially fixed problems..." alt="" coords="60,213,247,269"/>
-<area shape="rect" id="node5" href="$ParallelHeuristicSolver_8h.html" title="A parallel hybrid heuristic solving the energy optimization problem of robotic cells. " alt="" coords="216,317,403,373"/>
-<area shape="rect" id="node8" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="322,109,552,165"/>
-<area shape="rect" id="node4" href="$HeuristicAlgorithms_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/HeuristicAlgorithms.cpp" alt="" coords="5,317,192,373"/>
-<area shape="rect" id="node6" href="$ParallelHeuristicSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/ParallelHeuristicSolver.cpp" alt="" coords="102,421,295,477"/>
-<area shape="rect" id="node7" href="$ProjectSolver_8cpp.html" title="Entry point of the program. Auxiliary functions for program help and argument processing. " alt="" coords="320,429,523,470"/>
-<area shape="rect" id="node9" href="$RoboticLineSolverLP_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/RoboticLine\lSolverLP.cpp" alt="" coords="372,213,604,269"/>
+<map id="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/HeuristicSolver/KnowledgeBase.h" name="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/HeuristicSolver/KnowledgeBase.h">
+<area shape="rect" id="node2" href="$KnowledgeBase_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/HeuristicSolver/KnowledgeBase.cpp" alt="" coords="64,109,339,165"/>
+<area shape="rect" id="node3" href="$HeuristicAlgorithms_8h.html" title="The optimization sub&#45;heuristics and Linear Programming solver for partially fixed problems..." alt="" coords="112,213,389,269"/>
+<area shape="rect" id="node5" href="$ParallelHeuristicSolver_8h.html" title="A parallel hybrid heuristic solving the energy optimization problem of robotic cells. " alt="" coords="323,318,580,389"/>
+<area shape="rect" id="node8" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="464,109,721,165"/>
+<area shape="rect" id="node4" href="$HeuristicAlgorithms_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/HeuristicSolver/HeuristicAlgorithms.cpp" alt="" coords="5,325,299,381"/>
+<area shape="rect" id="node6" href="$ParallelHeuristicSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/HeuristicSolver/ParallelHeuristic\lSolver.cpp" alt="" coords="181,438,439,509"/>
+<area shape="rect" id="node7" href="$ProjectSolver_8cpp.html" title="Entry point of the program. Auxiliary functions for program help and argument processing. " alt="" coords="464,445,721,501"/>
+<area shape="rect" id="node9" href="$RoboticLineSolverLP_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/ILPSolver/RoboticLineSolverLP.cpp" alt="" coords="515,213,785,269"/>
 </map>

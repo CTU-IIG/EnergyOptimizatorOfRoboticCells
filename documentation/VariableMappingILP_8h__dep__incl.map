@@ -1,14 +1,14 @@
-<map id="/home/bukatlib/Downloads/Solver/inc/ILPSolver/VariableMappingILP.h" name="/home/bukatlib/Downloads/Solver/inc/ILPSolver/VariableMappingILP.h">
-<area shape="rect" id="node2" href="$VariableMappingILP_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/Variable\lMappingILP.cpp" alt="" coords="51,109,260,165"/>
-<area shape="rect" id="node3" href="$ConstraintsGenerator_8h.html" title="Declares a class for the generation of constraints. " alt="" coords="285,109,515,165"/>
-<area shape="rect" id="node5" href="$RoboticLineSolverILP_8h.html" title="RoboticLineSolverILP class, declared in this file, addresses the energy optimization problem of robot..." alt="" coords="514,213,744,269"/>
-<area shape="rect" id="node4" href="$ConstraintsGenerator_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/Constraints\lGenerator.cpp" alt="" coords="5,213,235,269"/>
-<area shape="rect" id="node8" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="259,213,489,269"/>
-<area shape="rect" id="node6" href="$RoboticLineSolverILP_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/RoboticLine\lSolverILP.cpp" alt="" coords="667,317,899,373"/>
-<area shape="rect" id="node7" href="$ProjectSolver_8cpp.html" title="Entry point of the program. Auxiliary functions for program help and argument processing. " alt="" coords="528,533,731,574"/>
-<area shape="rect" id="node9" href="$RoboticLineSolverLP_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/RoboticLine\lSolverLP.cpp" alt="" coords="23,317,255,373"/>
-<area shape="rect" id="node10" href="$HeuristicAlgorithms_8h.html" title="The optimization sub&#45;heuristics and Linear Programming solver for partially fixed problems..." alt="" coords="279,317,465,373"/>
-<area shape="rect" id="node12" href="$ParallelHeuristicSolver_8h.html" title="A parallel hybrid heuristic solving the energy optimization problem of robotic cells. " alt="" coords="405,421,592,477"/>
-<area shape="rect" id="node11" href="$HeuristicAlgorithms_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/HeuristicAlgorithms.cpp" alt="" coords="195,421,381,477"/>
-<area shape="rect" id="node13" href="$ParallelHeuristicSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/ParallelHeuristicSolver.cpp" alt="" coords="310,525,503,581"/>
+<map id="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/ILPSolver/VariableMappingILP.h" name="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/ILPSolver/VariableMappingILP.h">
+<area shape="rect" id="node2" href="$VariableMappingILP_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/ILPSolver/VariableMappingILP.cpp" alt="" coords="75,109,341,165"/>
+<area shape="rect" id="node3" href="$ConstraintsGenerator_8h.html" title="Declares a class for the generation of constraints. " alt="" coords="365,109,625,165"/>
+<area shape="rect" id="node5" href="$RoboticLineSolverILP_8h.html" title="RoboticLineSolverILP class, declared in this file, addresses the energy optimization problem of robot..." alt="" coords="621,213,879,269"/>
+<area shape="rect" id="node4" href="$ConstraintsGenerator_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/ILPSolver/ConstraintsGenerator.cpp" alt="" coords="37,213,315,269"/>
+<area shape="rect" id="node8" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="339,213,596,269"/>
+<area shape="rect" id="node6" href="$RoboticLineSolverILP_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/ILPSolver/RoboticLineSolverILP.cpp" alt="" coords="788,317,1063,373"/>
+<area shape="rect" id="node7" href="$ProjectSolver_8cpp.html" title="Entry point of the program. Auxiliary functions for program help and argument processing. " alt="" coords="621,549,879,605"/>
+<area shape="rect" id="node9" href="$RoboticLineSolverLP_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/ILPSolver/RoboticLineSolverLP.cpp" alt="" coords="5,317,275,373"/>
+<area shape="rect" id="node10" href="$HeuristicAlgorithms_8h.html" title="The optimization sub&#45;heuristics and Linear Programming solver for partially fixed problems..." alt="" coords="300,317,577,373"/>
+<area shape="rect" id="node12" href="$ParallelHeuristicSolver_8h.html" title="A parallel hybrid heuristic solving the energy optimization problem of robotic cells. " alt="" coords="455,422,712,493"/>
+<area shape="rect" id="node11" href="$HeuristicAlgorithms_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/HeuristicSolver/HeuristicAlgorithms.cpp" alt="" coords="137,429,431,485"/>
+<area shape="rect" id="node13" href="$ParallelHeuristicSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/HeuristicSolver/ParallelHeuristic\lSolver.cpp" alt="" coords="339,542,596,613"/>
 </map>

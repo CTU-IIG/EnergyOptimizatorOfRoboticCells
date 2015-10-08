@@ -1,11 +1,11 @@
-<map id="/home/bukatlib/Downloads/Solver/inc/HeuristicSolver/DataStructures.h" name="/home/bukatlib/Downloads/Solver/inc/HeuristicSolver/DataStructures.h">
-<area shape="rect" id="node2" href="$HeuristicAlgorithms_8h.html" title="The optimization sub&#45;heuristics and Linear Programming solver for partially fixed problems..." alt="" coords="477,317,664,373"/>
-<area shape="rect" id="node4" href="$ParallelHeuristicSolver_8h.html" title="A parallel hybrid heuristic solving the energy optimization problem of robotic cells. " alt="" coords="119,421,305,477"/>
-<area shape="rect" id="node7" href="$KnowledgeBase_8h.html" title="Declares the class storing the best found solutions, tuples, and information about the heuristic perf..." alt="" coords="219,109,405,165"/>
-<area shape="rect" id="node3" href="$HeuristicAlgorithms_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/HeuristicAlgorithms.cpp" alt="" coords="477,421,664,477"/>
-<area shape="rect" id="node5" href="$ParallelHeuristicSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/ParallelHeuristicSolver.cpp" alt="" coords="5,525,197,581"/>
-<area shape="rect" id="node6" href="$ProjectSolver_8cpp.html" title="Entry point of the program. Auxiliary functions for program help and argument processing. " alt="" coords="223,533,425,574"/>
-<area shape="rect" id="node8" href="$KnowledgeBase_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/HeuristicSolver\l/KnowledgeBase.cpp" alt="" coords="103,213,289,269"/>
-<area shape="rect" id="node9" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="314,213,544,269"/>
-<area shape="rect" id="node10" href="$RoboticLineSolverLP_8cpp_source.html" title="/home/bukatlib/Downloads\l/Solver/src/ILPSolver/RoboticLine\lSolverLP.cpp" alt="" coords="160,317,392,373"/>
+<map id="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/HeuristicSolver/DataStructures.h" name="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/HeuristicSolver/DataStructures.h">
+<area shape="rect" id="node2" href="$HeuristicAlgorithms_8h.html" title="The optimization sub&#45;heuristics and Linear Programming solver for partially fixed problems..." alt="" coords="604,317,881,373"/>
+<area shape="rect" id="node4" href="$ParallelHeuristicSolver_8h.html" title="A parallel hybrid heuristic solving the energy optimization problem of robotic cells. " alt="" coords="147,422,404,493"/>
+<area shape="rect" id="node7" href="$KnowledgeBase_8h.html" title="Declares the class storing the best found solutions, tuples, and information about the heuristic perf..." alt="" coords="301,109,559,165"/>
+<area shape="rect" id="node3" href="$HeuristicAlgorithms_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/HeuristicSolver/HeuristicAlgorithms.cpp" alt="" coords="596,429,889,485"/>
+<area shape="rect" id="node5" href="$ParallelHeuristicSolver_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/HeuristicSolver/ParallelHeuristic\lSolver.cpp" alt="" coords="5,542,263,613"/>
+<area shape="rect" id="node6" href="$ProjectSolver_8cpp.html" title="Entry point of the program. Auxiliary functions for program help and argument processing. " alt="" coords="288,549,545,605"/>
+<area shape="rect" id="node8" href="$KnowledgeBase_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/HeuristicSolver/KnowledgeBase.cpp" alt="" coords="148,213,423,269"/>
+<area shape="rect" id="node9" href="$RoboticLineSolverLP_8h.html" title="Declares LP solver which deals with partially fixed energy optimization problems created by the paral..." alt="" coords="447,213,704,269"/>
+<area shape="rect" id="node10" href="$RoboticLineSolverLP_8cpp_source.html" title="/home/bukatlib/Downloads\l/SolverEquationsGeneratedAsImages\l/src/ILPSolver/RoboticLineSolverLP.cpp" alt="" coords="258,317,528,373"/>
 </map>
