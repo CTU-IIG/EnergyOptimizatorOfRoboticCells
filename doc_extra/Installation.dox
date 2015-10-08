@@ -28,8 +28,8 @@
  *
  * ### Program installation 
  *
- * 1. download the source codes from <https://github.com/CTU-IIG>
- * 2. enter the root directory of the program
+ * 1. download the source codes from [this page](https://github.com/CTU-IIG/EnergyOptimizatorOfRoboticCells)
+ * 2. extract the sources and enter the root directory of the program
  * 3. create and enter a separate building directory
  * 	- \code mkdir build/; cd build/ \endcode
  * 4. configure the program
@@ -57,7 +57,7 @@
  * The program header displays the compile-time information like build type, used solver, and program version.
  * The following part prints valid short/long program parameters, for more information see \ref prog_help.
  * To test this program it is possible to use either your dataset file, or download available datasets (and optionally generator)
- * from our [GitHub page](https://github.com/CTU-IIG).
+ * from our [GitHub page](https://github.com/CTU-IIG/GeneratorOfRoboticCells).
  *
  * ### Selected CMake options by examples
  *
