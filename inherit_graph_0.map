@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classActivity.html" title="The base class incorporating common properties of robot operations and movements. ..." alt="" coords="5,31,72,57"/>
+<area shape="rect" id="node2" href="$classDynamicActivity.html" title="Collection of movements between two static activities. " alt="" coords="120,5,240,32"/>
+<area shape="rect" id="node3" href="$classStaticActivity.html" title="Collection of locations in which a robot operation (or waiting) can be performed. ..." alt="" coords="129,56,231,83"/>
+</map>

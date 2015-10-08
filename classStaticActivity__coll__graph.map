@@ -1,0 +1,16 @@
+<map id="StaticActivity" name="StaticActivity">
+<area shape="rect" id="node20" href="$classLocation.html" title="Location of the robot used either during work (welding) or waiting. " alt="" coords="1259,1355,1545,1711"/>
+<area shape="rect" id="node2" href="$classActivity.html" title="The base class incorporating common properties of robot operations and movements. ..." alt="" coords="583,305,761,749"/>
+<area shape="rect" id="node9" href="$classTimeLag.html" title="Instance of TimeLag class defines a time relation between two different robots. " alt="" coords="482,1121,581,1330"/>
+<area shape="rect" id="node26" href="$classDynamicActivity.html" title="Collection of movements between two static activities. " alt="" coords="1738,2707,1912,2975"/>
+<area shape="rect" id="node4" href="$classRobot.html" title="Instance of this class includes all the data structures and methods related to a robot. " alt="" coords="574,1399,780,1667"/>
+<area shape="rect" id="node18" href="$classRobotPowerMode.html" title="It represents the power saving mode of the robot. " alt="" coords="930,1875,1104,2157"/>
+<area shape="rect" id="node5" href="$classRoboticLine.html" title="The robotic cell corresponds to an instance of this class. " alt="" coords="437,2272,629,2643"/>
+<area shape="rect" id="node7" href="$classInterRobotOperation.html" title="The inter&#45;robot operation corresponding to the workpiece/weldment handling. " alt="" coords="149,2722,359,2961"/>
+<area shape="rect" id="node11" title="STL class. " alt="" coords="397,149,479,227"/>
+<area shape="rect" id="node12" title="STL class. " alt="" coords="373,6,503,98"/>
+<area shape="rect" id="node28" href="$classLocationDependentPowerConsumption.html" title="The instance of this class specifies input power of the robot for a particular robot configuration an..." alt="" coords="1236,2382,1527,2533"/>
+<area shape="rect" id="node23" href="$classMovement.html" title="The instance of the class corresponds to a robot movement between two coordinates. " alt="" coords="1736,1838,1907,2194"/>
+<area shape="rect" id="node21" href="$classActivityMode.html" title="Either a movement or location. " alt="" coords="1543,901,1676,1022"/>
+<area shape="rect" id="node25" href="$structMonomial.html" title="A part of the energy function of a movement. " alt="" coords="1780,915,1861,1007"/>
+</map>

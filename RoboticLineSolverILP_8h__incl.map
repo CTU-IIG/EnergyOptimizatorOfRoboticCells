@@ -1,0 +1,16 @@
+<map id="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/ILPSolver/RoboticLineSolverILP.h" name="/home/bukatlib/Downloads/SolverEquationsGeneratedAsImages/inc/ILPSolver/RoboticLineSolverILP.h">
+<area shape="rect" id="node2" href="$Settings_8h.html" title="It declares the namespace for program settings. " alt="" coords="27,499,111,525"/>
+<area shape="rect" id="node6" href="$RoboticLine_8h.html" title="The file contains various classes devoted to abstract representation of the robotic cell..." alt="" coords="959,424,1065,451"/>
+<area shape="rect" id="node19" href="$Solution_8h.html" title="A representation of the solution that is algorithm independent. " alt="" coords="1611,267,1748,293"/>
+<area shape="rect" id="node21" href="$ILPModel_8h.html" title="General model for Integer Linear Programming problem. " alt="" coords="1201,424,1359,451"/>
+<area shape="rect" id="node26" href="$VariableMappingILP_8h.html" title="Mapping of integer, to be more precise binary, variables of the energy optimization problem..." alt="" coords="2335,259,2528,301"/>
+<area shape="rect" id="node28" href="$ConstraintsGenerator_8h.html" title="Declares a class for the generation of constraints. " alt="" coords="1900,109,2133,136"/>
+<area shape="rect" id="node5" href="$DefaultSettings_8h.html" title="Default configuration of the solver. " alt="" coords="5,573,133,600"/>
+<area shape="rect" id="node16" href="$Exceptions_8h.html" title="The file defines extended exceptions for the better error handling in the program. " alt="" coords="1399,499,1551,525"/>
+<area shape="rect" id="node20" href="$SolverInterface_8h.html" title="Solver&#45;independent interface for solving Integer Linear Programming problems. " alt="" coords="1354,349,1547,376"/>
+<area shape="rect" id="node23" href="$NumericConstants_8h.html" title="The file defines allowed inaccuracies in a solution and constants for floats. " alt="" coords="1175,499,1373,525"/>
+<area shape="rect" id="node22" href="$SparseMatrix_8h.html" title="Memory efficient storage for a constraint matrix of Integer Linear Programming problem. " alt="" coords="933,499,1049,525"/>
+<area shape="rect" id="node27" href="$VariableMappingLP_8h.html" title="Mapping of continuous variables of the energy optimization problem. " alt="" coords="1640,349,1861,376"/>
+<area shape="rect" id="node29" href="$PrecalculatedMapping_8h.html" title="The structures and methods suitable for fast searching in the data structure of the robotic cell..." alt="" coords="1906,184,2128,211"/>
+<area shape="rect" id="node31" href="$Utils_8h.html" title="Various auxiliary functions used across the program. " alt="" coords="2030,424,2140,451"/>
+</map>

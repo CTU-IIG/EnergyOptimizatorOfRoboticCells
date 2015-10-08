@@ -1,0 +1,9 @@
+<map id="Robot" name="Robot">
+<area shape="rect" id="node7" href="$classActivity.html" title="The base class incorporating common properties of robot operations and movements. ..." alt="" coords="243,638,421,1082"/>
+<area shape="rect" id="node17" href="$classRobotPowerMode.html" title="It represents the power saving mode of the robot. " alt="" coords="787,719,961,1001"/>
+<area shape="rect" id="node2" href="$classRoboticLine.html" title="The robotic cell corresponds to an instance of this class. " alt="" coords="417,2115,609,2485"/>
+<area shape="rect" id="node4" href="$classInterRobotOperation.html" title="The inter&#45;robot operation corresponding to the workpiece/weldment handling. " alt="" coords="127,1654,336,1893"/>
+<area shape="rect" id="node6" href="$classTimeLag.html" title="Instance of TimeLag class defines a time relation between two different robots. " alt="" coords="181,1209,280,1418"/>
+<area shape="rect" id="node9" title="STL class. " alt="" coords="291,149,372,227"/>
+<area shape="rect" id="node10" title="STL class. " alt="" coords="267,6,396,98"/>
+</map>

@@ -1,0 +1,72 @@
+\form#0:$10^{-2}\,s$
+\form#1:\begin{alignat}{1} & \text{min}/\text{max} \; c'x \notag \\ & \qquad Ax \; \mathrm{op} \; b \notag \\ & \qquad x_1 \in \mathcal{R},\; x_2 \in \mathbb{B},\; x_3 \in \mathbb{Z} \notag \\ & \qquad x = x_1 \cup x_2 \cup x_3 \notag \end{alignat}
+\form#2:$Ax \; \mathrm{op} \; b$
+\form#3:$s_{a_2} \geq s_{a_1}+d_{a_1}+CT*\mathrm{multipleOfCycleTime}$
+\form#4:$s_j \geq s_i+d_i+CT*\mathrm{multipleOfCycleTime}$
+\form#5:$s_i$
+\form#6:$d_i$
+\form#7:$i$
+\form#8:$\mathrm{CT}$
+\form#9:$\mathrm{coeff}*d^{\mathrm{degree}}$
+\form#10:$d$
+\form#11:$s_t \geq s_f+l-\mathrm{CT} h$
+\form#12:$s_t$
+\form#13:$s_f$
+\form#14:$A$
+\form#15:$V \cup E$
+\form#16:$V$
+\form#17:$L_v$
+\form#18:$v \in V$
+\form#19:$E$
+\form#20:$E_\mathcal{O}$
+\form#21:$T_e$
+\form#22:$e \in E$
+\form#23:$\mathcal{R}$
+\form#24:$M_r$
+\form#25:$r \in \mathcal{R}$
+\form#26:$V_r$
+\form#27:$P_a$
+\form#28:$a \in A$
+\form#29:$S_a$
+\form#30:$B$
+\form#31:$k_{e,b}^t, q_{e,b}^t$
+\form#32:$E_{\mathcal{T\hspace{-1.0mm}L}}$
+\form#33:$l_{a_1, a_2}$
+\form#34:$(a_1, a_2) \in E_{\mathcal{T\hspace{-1.0mm}L}}$
+\form#35:$h_{a_1, a_2}$
+\form#36:$Q_{l_i}$
+\form#37:$l_i$
+\form#38:$n$
+\form#39:$g$
+\form#40:$e \in T_e$
+\form#41:$l \in L_v$
+\form#42:$C$
+\form#43:$\overline{W}$
+\form#44:$v_r^h$
+\form#45:$p_{v,l}^m$
+\form#46:$v \in V_r$
+\form#47:$\underline{d}_e^t$
+\form#48:$t \in T_e$
+\form#49:$\overline{d}_e^t$
+\form#50:$W_a$
+\form#51:$s_a$
+\form#52:$d_a$
+\form#53:$x_v^l$
+\form#54:$z_v^m$
+\form#55:$m \in M_r$
+\form#56:$y_e^t$
+\form#57:$w_{e,v}$
+\form#58:$e \in E_\mathcal{O}$
+\form#59:$\left(v \in S_e\right)$
+\form#60:$c_o^n$
+\form#61:$a_1 \rightarrow a_2$
+\form#62:$a_2 \rightarrow a_1$
+\form#63:$\text{replace it by the correct image (Doxygen bug)}$
+\form#64:$\mathcal{HC}_r^{\mathrm{act}}$
+\form#65:$l_f \rightarrow l_m \rightarrow l_t$
+\form#66:$l_m$
+\form#67:$\Phi_{\mathrm{max}}$
+\form#68:$\hat{f}_e^t(d_e)$
+\form#69:$\mathcal{F}_{\!\mathcal{T}}^1, \mathcal{F}_{\!\mathcal{T}}^2$
+\form#70:$\mathcal{D}_{\geq}, \mathcal{D}_{\leq}$
+\form#71:\begin{alignat*}{3} & \text{minimize} \displaystyle \sum_{\forall (e, t) \in \mathcal{F}_{\!\mathcal{T}}^1} \hat{f}_e^t(d_e) + \sum_{\forall (v,l,m) \in \mathcal{F}_{\!\mathcal{T}}^2} p_{v,l}^m d_v \\[1mm] & \quad \text{subject to:}\;\text{(9)*}, \text{(10)*}, \text{(14)*}, \text{(15)*}, \text{(16)*} \\ & \quad s_{a_2}+ n \mathrm{CT} \geq s_{a_1}+d_{a_1} \qquad \forall (a_1, a_2, n) \in \mathcal{D}_{\geq} & \qquad & (21) \\ & \quad s_{a_2} + d_{a_2} + n \mathrm{CT} \leq s_{a_1} \qquad \forall (a_1, a_2, n) \in \mathcal{D}_{\leq} & \qquad & (22) \end{alignat*}

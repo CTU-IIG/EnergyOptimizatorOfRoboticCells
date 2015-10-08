@@ -1,0 +1,17 @@
+<map id="PrecalculatedMapping" name="PrecalculatedMapping">
+<area shape="rect" id="node3" href="$classActivity.html" title="The base class incorporating common properties of robot operations and movements. ..." alt="" coords="1297,305,1476,749"/>
+<area shape="rect" id="node10" href="$classTimeLag.html" title="Instance of TimeLag class defines a time relation between two different robots. " alt="" coords="1539,827,1639,1037"/>
+<area shape="rect" id="node27" href="$classDynamicActivity.html" title="Collection of movements between two static activities. " alt="" coords="1231,3985,1405,4253"/>
+<area shape="rect" id="node28" href="$classStaticActivity.html" title="Collection of locations in which a robot operation (or waiting) can be performed. ..." alt="" coords="1604,3545,1823,3813"/>
+<area shape="rect" id="node5" href="$classRobot.html" title="Instance of this class includes all the data structures and methods related to a robot. " alt="" coords="1282,1179,1488,1447"/>
+<area shape="rect" id="node19" href="$classRobotPowerMode.html" title="It represents the power saving mode of the robot. " alt="" coords="971,1512,1145,1795"/>
+<area shape="rect" id="node6" href="$classRoboticLine.html" title="The robotic cell corresponds to an instance of this class. " alt="" coords="1615,1859,1808,2229"/>
+<area shape="rect" id="node8" href="$classInterRobotOperation.html" title="The inter&#45;robot operation corresponding to the workpiece/weldment handling. " alt="" coords="1207,2294,1416,2533"/>
+<area shape="rect" id="node12" title="STL class. " alt="" coords="1345,149,1427,227"/>
+<area shape="rect" id="node13" title="STL class. " alt="" coords="1321,6,1451,98"/>
+<area shape="rect" id="node31" href="$classLocationDependentPowerConsumption.html" title="The instance of this class specifies input power of the robot for a particular robot configuration an..." alt="" coords="721,1969,1012,2119"/>
+<area shape="rect" id="node21" href="$classLocation.html" title="Location of the robot used either during work (welding) or waiting. " alt="" coords="946,2611,1232,2967"/>
+<area shape="rect" id="node24" href="$classMovement.html" title="The instance of the class corresponds to a robot movement between two coordinates. " alt="" coords="661,3046,832,3402"/>
+<area shape="rect" id="node22" href="$classActivityMode.html" title="Either a movement or location. " alt="" coords="441,2353,575,2474"/>
+<area shape="rect" id="node26" href="$structMonomial.html" title="A part of the energy function of a movement. " alt="" coords="599,2367,680,2459"/>
+</map>
