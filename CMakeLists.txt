@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.0)
+cmake_minimum_required (VERSION 3.1)
 
 set (CMAKE_BUILD_TYPE "Release" CACHE STRING "Build type.")
 set_property (CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS "Release" "Debug")
@@ -30,27 +30,9 @@ else ()
 	message (FATAL_ERROR "Unsupported ILP solver!")
 endif ()
 
-
-if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-	# It is necessary to enable C++11 support for GCC or Clang compilers.
-	add_definitions ("-std=c++11 -Wall -pedantic")
-	# We have added '-static-libstdc++' linking flag
-	# to workaround the bug with broken ABI of libstdc++ gcc libraries
-	# (gcc-4.7, clang-3.3 using the libraries of gcc-4.8).
-	# It was resulting in invalid time measurement if the
-	# chrono extension of C++11 library was used.
-	set (CMAKE_EXE_LINKER_FLAGS "-static-libstdc++" CACHE STRING "" FORCE)
-elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Intel")
-	# Enable C++11 support for Intel compiler.
-	if (WIN32)
-		add_definitions ("/Qstd=c++11")
-	endif()
-elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
-	# Enable exception handling for Microsoft MSVC compiler.
-	add_definitions ("/EHsc")
-else ()
-	message (FATAL_ERROR "Unsupported compiler '${CMAKE_CXX_COMPILER_ID}'!")
-endif()
+# Support for C++11 is required globally.
+set (CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_STANDARD_REQUIRED ON)
 
 option (ENABLE_OPENMP "It enables OpenMP, needs a compiler support." ON)
 if (ENABLE_OPENMP)

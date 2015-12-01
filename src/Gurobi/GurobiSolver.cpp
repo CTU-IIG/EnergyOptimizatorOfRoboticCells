@@ -38,7 +38,11 @@ string solverIdentification()	{
 }
 
 void initializeLocalEnvironments(int numberOfThreads)	{
-	threadEnv.resize(numberOfThreads);
+	try {
+		threadEnv.resize(numberOfThreads);
+	} catch (GRBException& e) {
+		throw ILPSolverException(caller(), e.getMessage());
+	}
 }
 
 SolutionILP solveILP(const ILPModel& m, bool verbose, double gap, double timeLimit, int numberOfThreads, int threadId)	{

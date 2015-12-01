@@ -16,7 +16,7 @@
  * 	+ Gurobi is the best performing solver for the heuristic
  * 	+ at least one solver has to be correctly installed
  * - <b>CMake</b> build system
- * 	+ version 3.0 or newer is required
+ * 	+ version 3.1 or newer is required
  * - <b>C++11</b> compiler
  *	+ GCC of version 4.8 or newer
  *	+ Clang of version 3.5 or newer
