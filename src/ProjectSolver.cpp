@@ -167,7 +167,6 @@ bool getArgument(int& i, int argc, char* argv[], const string& fullName, const s
 
 /*!
  * \param[in,out] i A reference to the index pointing to the current argument to be processed. The index may be updated.
- * \param argc The number of program arguments including the program name.
  * \param argv Arguments of the program.
  * \param fullName The full name of the argument, e.g. "--use-heuristic-algorithm".
  * \param shortName Abbreviated version of the full argument, e.g. "-uha".
@@ -175,7 +174,7 @@ bool getArgument(int& i, int argc, char* argv[], const string& fullName, const s
  * \return Whether the argument with the given name (short or full) was processed.
  * \brief It processes the arguments without parameters.
  */
-bool processArg(int& i, int argc, char* argv[], const string& fullName, const string& shortName, bool* toWrite = nullptr)	{
+bool processArg(int& i, int, char* argv[], const string& fullName, const string& shortName, bool* toWrite = nullptr)	{
 	string arg = argv[i];
 	if (arg == fullName || arg == shortName)	{
 		if (toWrite != nullptr)
@@ -381,14 +380,14 @@ int main(int argc, char* argv[])	{
 
 	} catch (const InvalidDatasetFile& e)	{
 		cerr<<exceptionToString(e)<<endl;
-		cerr<<"\nProjectSolver: Cannot read the input dataset!"<<endl;
+		cerr<<"\nEnergyOptimizatorOfRoboticCells: Cannot read the input dataset!"<<endl;
 		return INPUT_OUTPUT_ERROR;
 	} catch (const InvalidArgument& e)	{
 		cerr<<exceptionToString(e)<<endl;
 		return INVALID_PARAMETER;
 	} catch (const SolverException& e)	{
 		cerr<<exceptionToString(e)<<endl;
-		cerr<<"\nProjectSolver: A runtime error occurred, terminating..."<<endl;
+		cerr<<"\nEnergyOptimizatorOfRoboticCells: A runtime error occurred, terminating..."<<endl;
 		return RUNTIME_ERROR;
 	} catch (const exception& e)	{
 		cerr<<exceptionToString(e)<<endl;

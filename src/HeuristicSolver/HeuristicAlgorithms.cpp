@@ -154,7 +154,7 @@ OptimalTiming HeuristicAlgorithms::solvePartialProblem(const PartialSolution& ps
 			ot = convert(ps, s);
 			minCriterion = min(minCriterion, ot.totalEnergy);
 			maxCriterion = max(maxCriterion, ot.totalEnergy);
-			const CollisionResolution& r = resolveTheWorstCollision(ps, ot, s);
+			const CollisionResolution& r = resolveTheWorstCollision(ot);
 			if (r.a1 != nullptr && r.a2 != nullptr)
 				solver.addCollisionResolution(r.a1, r.a2, r.multiplier);
 			else
@@ -279,7 +279,7 @@ CollisionResolution HeuristicAlgorithms::resolveCollision(ActivityMode* m1, doub
 	return cl;
 }
 
-CollisionResolution HeuristicAlgorithms::resolveTheWorstCollision(const PartialSolution& ps, const OptimalTiming& ot, const Solution& s) const	{
+CollisionResolution HeuristicAlgorithms::resolveTheWorstCollision(const OptimalTiming& ot) const	{
 	CollisionResolution ret;
 	for (const auto& mit1 : ot.modeToStartAndDur)   {
 		ActivityMode *m1 = mit1.first;
@@ -314,6 +314,9 @@ double HeuristicAlgorithms::heuristicLocationChanges(OptimalTiming& ot, PartialS
 	double averageInputPower = ot.totalEnergy/(numberOfRobots*cycleTime);
 	for (uint32_t r = 0; r < numberOfRobots; ++r)	{
 		uint32_t numberOfLocations = ps.locs[r].size();
+		if (numberOfLocations <= 2)	// the first location is duplicated at the end
+			continue;
+
 		uniform_int_distribution<uint32_t> randomOffset(0u, 1u);
 		for (uint32_t i = randomOffset(threadGenerator); i+1u < numberOfLocations; i += 2u)	{
 			Location *bestLoc = ps.locs[r][i], *selLoc = bestLoc;

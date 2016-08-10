@@ -25,7 +25,7 @@
  */
 
 #include <cmath>
-#include <climits>
+#include <limits>
 
 //! A minimal time difference that is considered significant for a solution.
 constexpr double TIME_TOL = 0.01;
@@ -34,10 +34,10 @@ constexpr double CRITERION_RTOL = 0.005;
 //! Minimal recognizable difference in the time.
 constexpr double TIME_ERR = 0.001*TIME_TOL;
 
-constexpr double F32_INF = std::numeric_limits<float>::infinity();
-constexpr double F32_MIN = std::numeric_limits<float>::lowest();
-constexpr double F32_MAX = std::numeric_limits<float>::max();
-constexpr double F32_EPS = std::numeric_limits<float>::epsilon();
+constexpr float F32_INF = std::numeric_limits<float>::infinity();
+constexpr float F32_MIN = std::numeric_limits<float>::lowest();
+constexpr float F32_MAX = std::numeric_limits<float>::max();
+constexpr float F32_EPS = std::numeric_limits<float>::epsilon();
 
 constexpr double F64_INF = std::numeric_limits<double>::infinity();
 constexpr double F64_MIN = std::numeric_limits<double>::lowest();

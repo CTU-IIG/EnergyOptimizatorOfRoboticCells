@@ -1,6 +1,7 @@
 file (GLOB SOURCES "*.cpp")
 add_library (ILPSolver ${LIBRARY_LINKAGE} ${SOURCES})
 target_link_libraries (ILPSolver ILPModel)
+target_link_libraries (ILPSolver Solution)
 if (${ILP_SOLVER} STREQUAL "Cplex")
 	target_link_libraries (ILPSolver CplexSolver)
 elseif (${ILP_SOLVER} STREQUAL "Gurobi")

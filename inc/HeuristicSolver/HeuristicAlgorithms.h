@@ -73,13 +73,11 @@ class HeuristicAlgorithms {
 		 */
 		CollisionResolution resolveCollision(ActivityMode* m1, double s1, double d1, ActivityMode* m2, double s2, double d2) const;
 		/*!
-		 * \param ps A partial problem with fixed locations, movements, and power saving modes.
 		 * \param ot Timing of the robotic cell.
-		 * \param s %Solution of the Linear Programming problem.
 		 * \return How to resolve the worst collision that occurred in the given timing.
 		 * \brief It finds the worst collision, i.e. with the longest time of active collision, and returns how to resolve it.
 		 */
-		CollisionResolution resolveTheWorstCollision(const PartialSolution& ps, const OptimalTiming& ot, const Solution& s) const;
+		CollisionResolution resolveTheWorstCollision(const OptimalTiming& ot) const;
 
 		/*!
 		 * \param[in,out] ot Timing of the robotic cell.

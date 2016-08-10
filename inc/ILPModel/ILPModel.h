@@ -69,7 +69,7 @@ struct Variable {
  * \brief Integer Linear Programming problem is stored in this data structure.
  */
 struct ILPModel	{
-	ILPModel(Objective obj = MINIMIZE) : obj(obj) { }
+	ILPModel(Objective o = MINIMIZE) : obj(o) { }
 	size_t numberOfConstraints() const { return A.numberOfRows(); }
 	size_t numberOfVariables() const { return x.size(); }
 	//! It checks that sizes of vectors and the matrix are valid.

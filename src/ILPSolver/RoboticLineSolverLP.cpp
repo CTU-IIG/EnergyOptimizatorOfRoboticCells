@@ -155,6 +155,7 @@ void RoboticLineSolverLP::construct(const PrecalculatedMapping& m, bool addTimeL
 					throw SolverException(caller(), "Cannot find the discretized energy function for the location and power saving mode!");
 				#else
 				mGenerator.addEnergyFunction(mMapper.d, mMapper.W, locs[i], pwrms[i]);
+				(void) m;	// Suppress the warning of compiler about unused variable (used only for Gurobi).
 				#endif
 
 				Variable& d = mMapper.variables[mappedIdx];

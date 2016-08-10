@@ -29,7 +29,7 @@
 using namespace std;
 
 double Movement::energyConsumption(const double& duration) const {
-	assert(duration >= 0.0 && mMinDuration <= duration+TIME_ERR && duration <= mMaxDuration+TIME_ERR && "Invalid duration of the movement!");
+	assert(duration > 0.0 && mMinDuration <= duration+TIME_ERR && duration <= mMaxDuration+TIME_ERR && "Invalid duration of the movement!");
 
 	double consumption = 0.0;
 	for (const Monomial& m : mEnergyFunction)
@@ -253,6 +253,10 @@ void Robot::setActivitiesRelations(const map<uint32_t, Location*>& pointToLocati
 
 				mv->from(fSit->second);
 				mv->to(tSit->second);
+
+				// Filter monomials with zero coefficients.
+				auto it = remove_if(mv->mEnergyFunction.begin(), mv->mEnergyFunction.end(), [](Monomial m) { return m.coeff == 0.0; });
+				mv->mEnergyFunction.erase(it, mv->mEnergyFunction.end());
 			}
 
 			if (sa1 != nullptr && sa2 != nullptr)	{
