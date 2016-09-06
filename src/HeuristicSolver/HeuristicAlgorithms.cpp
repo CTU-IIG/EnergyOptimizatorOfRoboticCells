@@ -146,6 +146,7 @@ OptimalTiming HeuristicAlgorithms::solvePartialProblem(const PartialSolution& ps
 
 	mKB.recordPartialProblemSolveCall();
 
+	uint32_t iter = 0, iterMax = 4000;
 	while (!collisionsFeasible)	{
 		high_resolution_clock::time_point startLP = high_resolution_clock::now();
 		s = solver.solve();
@@ -161,6 +162,8 @@ OptimalTiming HeuristicAlgorithms::solvePartialProblem(const PartialSolution& ps
 				collisionsFeasible = true;
 
 			extraTime = 0.0;
+			if (++iter > iterMax)
+				throw NoFeasibleSolutionExists(caller(), "Cannot solve the subproblem to optimality!");
 		} else {
 			switch (algo) {
 				case LP_INITIAL_PROBLEM:

@@ -213,9 +213,9 @@ void ParallelHeuristicSolver::workerThread(uint32_t threadId, vector<vector<Circ
 				try {
 					double previousCriterion = timing.totalEnergy;
 					timing = algo.solvePartialProblem(ps, t, selAlgo);
-					bestCriterion = min(bestCriterion, timing.totalEnergy);
 					double energyDiffExact = previousCriterion-timing.totalEnergy;
 					relativeImprovement = max(bestCriterion-timing.totalEnergy, 0.0)/(timing.totalEnergy+F64_EPS);
+					bestCriterion = min(bestCriterion, timing.totalEnergy);
 					prevPartSol = ps; prevOptTiming = timing;
 					imprLP.addValue(relativeImprovement);
 
@@ -223,7 +223,7 @@ void ParallelHeuristicSolver::workerThread(uint32_t threadId, vector<vector<Circ
 						heurRelEstError = abs(energyDiffEstimation-energyDiffExact)/abs(energyDiffExact);
 
 					infeasibilityConsecutiveCounter = 0u;
-					readNextTuple = (imprLP.filled() && imprLP.average() < CRITERION_RTOL);
+					readNextTuple = (imprLP.filled() && imprLP.average() < 10e-4);
 				} catch (NoFeasibleSolutionExists& e)	{
 					// The solution was made infeasible by heuristic changes, restore the previous solution and switch to the next heuristic.
 					solutionInfeasible = true;
@@ -571,7 +571,7 @@ vector<vector<CircuitRecord>> ParallelHeuristicSolver::generateShortestCircuits(
 				if (allCircuits.size() > maxAlternativesPerRobot+2)	{
 					// select shortest alternatives
 					double minCycleTime = allCircuits.front().hc.minLength;
-					double shortestAmount = 0.2+0.6*(penaltyFunction(minCycleTime, cycleTime)/10.0);
+					double shortestAmount = 0.2+0.3*(penaltyFunction(minCycleTime, cycleTime)/10.0);
 					uint32_t numOfShortest = ceil(maxAlternativesPerRobot*shortestAmount);
 					shortestCircuits[r].insert(shortestCircuits[r].end(), allCircuits.cbegin(), allCircuits.cbegin()+numOfShortest);
 
@@ -943,6 +943,12 @@ void ParallelHeuristicSolver::printProgressInfo(const double& currentRuntime)	{
 	const auto& LPInfo = mKB.infoLP(), &infoLocHeur = mKB.infoLocHeur(), &infoPwrmHeur = mKB.infoPwrmHeur();
 	clog<<string(35, '=')<<" STAT INFO "<<string(35, '=')<<endl;
 	clog<<"current runtime: "<<currentRuntime<<endl;
+	try {
+		Solution s = mKB.bestSolution();
+		clog<<"current best criterion: "<<s.totalEnergy<<" J"<<endl;
+	} catch (...)	{
+		clog<<"no feasible solution found"<<endl;
+	}
 	clog<<string(81, '-')<<endl;
 	clog<<"generated tuples: "<<tupleGen.first<<" ("<<tupleGen.second*1000.0<<" ms per tuple)"<<endl;
 	clog<<"percentage of processed: "<<mKB.percentageOfProcessed()<<" %"<<endl;

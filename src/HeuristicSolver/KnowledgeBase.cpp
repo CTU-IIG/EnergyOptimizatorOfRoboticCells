@@ -34,10 +34,14 @@ list<pair<Solution, CircuitTuple>> KnowledgeBase::eliteSolutions() {
 
 Solution KnowledgeBase::bestSolution()	{
 	Solution best;
-	if (!mEliteSolutions.empty())
+	mEliteMtx.lock();
+	if (!mEliteSolutions.empty())	{
 		best = mEliteSolutions.front().first;
-	else
+		mEliteMtx.unlock();
+	} else {
+		mEliteMtx.unlock();
 		throw EmptySolutionPool(caller(), "No feasible solution found!");
+	}
 
 	return best;
 }
