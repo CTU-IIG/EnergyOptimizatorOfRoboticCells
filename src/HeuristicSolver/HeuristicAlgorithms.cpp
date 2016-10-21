@@ -16,6 +16,7 @@
 */
 
 #include <chrono>
+#include <random>
 #include "Shared/Algorithms.h"
 #include "HeuristicSolver/HeuristicAlgorithms.h"
 #ifndef NDEBUG

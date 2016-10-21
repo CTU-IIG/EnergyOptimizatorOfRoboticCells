@@ -24,6 +24,7 @@
  * \brief Various data structures used by the heuristic.
  */
 
+#include <numeric>
 #include <vector>
 #include <unordered_map>
 #include "RoboticLine.h"
