@@ -286,7 +286,7 @@ InterRobotOperation* XmlReader::processInterRobotOperationNode(const Node *inter
 
 		try {
 			vector<Location*> cmpPair;
-			for (uint32_t i = 0; i < min(locations.size(), 2ul); ++i)	{
+			for (uint32_t i = 0; i < min(locations.size(), (size_t) 2); ++i)	{
 				const Element *locElement = castToElement(locations[i]);
 				auto sit = mAidToActivity.find(stoul(getAttribute(locElement, "aid")));
 				if (sit != mAidToActivity.cend())	{
