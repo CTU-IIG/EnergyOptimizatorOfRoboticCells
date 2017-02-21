@@ -15,7 +15,7 @@
  * \authors [Libor Bukata](mailto:bukatlib@fel.cvut.cz), [Premysl Sucha](mailto:suchap@fel.cvut.cz), [Zdenek Hanzalek](mailto:hanzalek@fel.cvut.cz), and [Pavel Burget](mailto:pavel.burget@fel.cvut.cz)<br>
  * [Industrial Informatics Research Center](http://industrialinformatics.cz/), Czech Technical University in Prague
  * \copyright This project is released under the GNU Public License.
- * \see L. Bukata, P. Sucha, Z. Hanzalek, and P. Burget, Energy Optimization of Robotic Cells, in IEEE Transactions on Industrial Informatics,
- * vol. PP, no. 99, doi: [10.1109/TII.2016.2626472](http://dx.doi.org/10.1109/tii.2016.2626472).
+ * \see L. Bukata, P. Sucha, Z. Hanzalek, and P. Burget, Energy Optimization of Robotic Cells, in *IEEE Transactions on Industrial Informatics*,
+ * vol. 13, no. 1, pp. 92-102, Feb. 2017, doi: [10.1109/TII.2016.2626472](http://dx.doi.org/10.1109/tii.2016.2626472).
  */
 
