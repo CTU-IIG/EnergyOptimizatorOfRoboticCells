@@ -21,7 +21,7 @@ else (GUROBI_INCLUDE_DIR)
 	)
 
 	find_library(GUROBI_LIBRARY
-		NAMES gurobi gurobi60 gurobi65
+		NAMES gurobi gurobi60 gurobi65 gurobi70 gurobi75
 		PATHS "$ENV{GUROBI_HOME}/lib"
 		"/Library/gurobi605/mac64/lib"
 		"C:\\libs\\gurobi605\\lib"
